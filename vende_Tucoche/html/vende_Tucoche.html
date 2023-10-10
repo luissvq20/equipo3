@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARMC'QUEEN</title>
+</head>
+<body>
+        <h1>Compramos tu coche</h1>
+        <h4>¡Introduce los datos de tu coche!</h4>
+
+        <form>
+            <select id="marca" name="marca" required>
+                <option value=" " disabled selected>Marca</option>
+                <option value="AUDI">AUDI</option>
+                <option value="BMW">BMW</option>
+                <option value="PEUGEOT">PEUGEOT</option>
+                <option value="MERCEDES">MERCEDES</option>
+                <option value="SEAT">SEAT</option>
+                <option value="NISSAN">NISSAN</option>
+                <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
+                <option value="SKODA">SKODA</option>
+                <option value="FORD">FORD</option>
+
+              </select><br><br>
+          
+              <input type="text" id="modelo" name="modelo" placeholder="Modelo" required><br><br>
+              <input type="text" id="ano" name="ano" placeholder="Año" required><br><br>
+              <input type="text" id="carroceria" name="carroceria" placeholder="Carrocería" required><br><br>
+              <input type="text" id="transmision" name="transmision" placeholder="Transmisión" required><br><br>
+
+              <select id="combustible" name="combustible" >
+                <option value=" " disabled selected>Combustible</option>
+                <option value="diesel">Diesel</option>
+                <option value="gasonlina">Gasolina</option>
+              </select><br><br>
+              
+              <input type="text" id="version" name="version" placeholder="Versión" required><br><br>
+              <input type="text" id="km" name="km" placeholder="Kilómetros" required><br><br>
+              <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required><br><br>
+
+            <input type="submit" value="Siguiente">
+          </form>
+
+          <div>
+            <h6>¿Tienes alguna duda?</h6>
+            <h4>980 080 807</h4>
+            <h6>¡¡Llamanos!!</h6>
+          </div>
+
+
+        <h4>¡Introduce tus datos personales!</h4>
+          <form>
+
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" required><br><br>
+              <select id="provincia" name="provincia" >
+                <option value=" " disabled selected>Provincia</option>
+                <option value="alava">Álava</option>
+                <option value="albacete">Albacete</option>
+                <option value="alicante">Alicante</option>
+                <option value="almeria">Almería</option>
+                <option value="avila">Ávila</option>
+                <option value="badajoz">Badajoz</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="burgos">Burgos</option>
+                <option value="caceres">Cáceres</option>
+                <option value="cadiz">Cádiz</option>
+                <option value="castellon">Castellón</option>
+                <option value="ciudad_real">Ciudad Real</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="cuenca">Cuenca</option>
+                <option value="girona">Girona</option>
+                <option value="granada">Granada</option>
+                <option value="guadalajara">Guadalajara</option>
+                <option value="huelva">Huelva</option>
+                <option value="huesca">Huesca</option>
+                <option value="jaen">Jaén</option>
+                <option value="leon">León</option>
+                <option value="lleida">Lleida</option>
+                <option value="lugo">Lugo</option>
+                <option value="madrid">Madrid</option>
+                <option value="malaga">Málaga</option>
+                <option value="murcia">Murcia</option>
+                <option value="navarra">Navarra</option>
+                <option value="ourense">Ourense</option>
+                <option value="palencia">Palencia</option>
+                <option value="las_palmas">Las Palmas</option>
+                <option value="pontevedra">Pontevedra</option>
+                <option value="la_rioja">La Rioja</option>
+                <option value="salamanca">Salamanca</option>
+                <option value="santa_cruz_de_tenerife">Santa Cruz de Tenerife</option>
+                <option value="segovia">Segovia</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="soria">Soria</option>
+                <option value="tarragona">Tarragona</option>
+                <option value="teruel">Teruel</option>
+                <option value="toledo">Toledo</option>
+                <option value="valencia">Valencia</option>
+                <option value="valladolid">Valladolid</option>
+                <option value="vizcaya">Vizcaya</option>
+                <option value="zamora">Zamora</option>
+                <option value="zaragoza">Zaragoza</option>
+              </select><br><br>
+              <input type="email" id="email" name="email" placeholder="Correo electrónico" required><br><br>
+              <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required><br><br>
+              <input type="text" id="dni" name="dni" placeholder="DNI" required><br><br>
+              <textarea id="comentario" name="comentario" placeholder="Comentario del cliente..." rows="5" cols="30"></textarea><br><br>
+              <input type="checkbox" id="polliticas" name="polliticas" required>
+              <label for="">Acepto la política de privacidad</label>
+              <br><br>
+              <input type="checkbox" id="notificaciones" name="notificaciones" >
+              <label for="">Activa las notificaciones de novedades</label>
+              <br><br>
+
+            <input type="button" value="Volver">
+            <input type="submit" value="Siguiente">
+
+          </form>
+
+          <h4>¡Tasacción de tu coche, coge cita!</h4>
+          <h4>El precio de ti vehículo es:</h4>
+          <h2><span>de</span>XX.XXX€ <span>a</span> XX.XXX€</h2>
+          <form>
+              <select id="provincia" name="provincia" >
+                <option value=" " disabled selected>Provincia</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="leon">León</option>
+                <option value="madrid">Madrid</option>
+                <option value="las_palmas">Las Palmas</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="valencia">Valencia</option>
+                <option value="zaragoza">Zaragoza</option>
+              </select><br><br>
+              <select id="Concesionario" name="provincia" >
+                <option value=" " disabled selected>Concesionario</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="leon">León</option>
+                <option value="madrid">Madrid</option>
+                <option value="las_palmas">Las Palmas</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="valencia">Valencia</option>
+                <option value="zaragoza">Zaragoza</option>
+              </select><br><br>
+
+              <input type="datetime" id="fecha" name="fecha" placeholder="Fecha" required><br><br>
+              <input type="datetime" id="hora" name="hora" placeholder="Hora" required><br><br>
+
+            <input type="button" value="Volver">
+            <input type="submit" value="Coger cita">
+
+          </form>
+          
+    
+</body>
+</html>
