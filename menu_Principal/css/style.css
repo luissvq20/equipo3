@@ -1,0 +1,47 @@
+:root{
+    --negro : #212121;
+    --naranja : #FF5733;
+    --blanco : #ffffff;
+
+    --fuente-principal: 3.8rem;
+}
+
+.carrusel {
+    width: 100%;
+    max-width: 120em;
+    background-color: black;
+}
+
+.carrusel .grande {
+    width: 300%;
+    background-color: white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carrusel .img {
+    width: calc(100% / 3);
+    
+}
+
+.carrusel .puntos {
+    width: 100%;
+    background-color: var(--blanco);
+    padding: .4em;
+    margin: 1em 0 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel .punto {
+    width: 2em;
+    height: 2em;
+    background-color: var(--naranja);
+    margin: .2em;
+}
