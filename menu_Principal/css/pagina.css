@@ -18,6 +18,7 @@ body{
     overflow: hidden;    /* OCULTA LOS ELEMENTOS */
     margin: auto;        /* LO CENTRA TODO */
     padding: 60px 0;     /* PADDING 60PX ARRIBA Y ABAJO Y 0 PX A LOS LADOS - ESPACIADO ENTRE LOS ELEMENTOS - */
+    
 }
 
 header{
@@ -144,6 +145,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .img-galeria{
@@ -151,10 +153,11 @@ header{
     width: 30%;
     display: block;
     margin-bottom: 15px;
-    box-shadow: 0 0 6 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 5);
     cursor: pointer;  
     border-radius: 25px; 
     transition: opacity 0.5s;  /* ESTO HARA QUE CUANDO DEJE DE ESTAR EL RATON POR ENCIMA NO QUITE BRUSCAMENTE LA ANIMACION */
+
 }
 
 .imagen-light{
