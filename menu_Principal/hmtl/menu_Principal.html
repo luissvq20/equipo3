@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/menu_Principal/css/slider.css">
+    <title>Bestcaption</title>
+    <link rel="stylesheet" href="/menu_Principal/css/pagina.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-   
+    <!-- Este header guarda LOS MENUS y Texto -->
+    <header class="header" id="inicio">
+        <img src="/menu_Principal/images/menu.svg" alt="" class="hamburger">
+        <nav class="menu-navegacion">
+            <a href="/vende_Tucoche/html/vende_Tucoche.html">COMPRA TU COCHE</a>
+            <a href="/vende_Tucoche/html/vende_Tucoche.html">VENDE TU COCHE</a>
+            <a href="#portafolio">SOBRE NOSOTROS</a>
+            <a href="#tarifa">OPINIONES</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
 
+        <div class="contenedor head">
+            <img src="img/logoSINFONDO.png" alt="" class="titulo">
+            <!-- <h1 class="titulo">Convertimos tus sueños en realidad</h1> -->
+            <p class="copy">Coches que te inspiran, precios que te sorprenden.</p>
+        </div>
+    </header>
+
+    <!-- Este main guarda la imagen de la camara y los textos de DISEÑO WEB -->
+    <main> 
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="/menu_Principal/images/coche.svg" alt="">
+                <div class="checlist-servicio">
+                    <div class="servicie">
+                        <h3 class="n-service"><span class="number">1 </span>Nos dedicamos a la compra venta</h3>
+                        <p>Compra coches de cualquier gama al mejor precio</p>
+                    </div>
+                    <div class="servicie">
+                        <h3 class="n-service"><span class="number">2 </span>¿Quieres venderlo?</h3>
+                        <p>¡No te preocupes! en Kar Mc'Queen te garantizamos la mejor tasacion por nuestros expertos</p>
+                    </div>
+                    <div class="servicie">
+                        <h3 class="n-service"><span class="number">3 </span>¿Buscas un coche en concreto y no lo ves?</h3>
+                        <p>Ponte en contacto con nosotros y ¡haremos la busqueda de tu vehiculo por ti!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="/menu_Principal/images/1.jpg" alt="" class="img-galeria">
+                    <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
+                    <img src="/menu_Principal/images/3.jpg" alt="" class="img-galeria">
+                    <img src="/menu_Principal/images/4.jpg" alt="" class="img-galeria">
+                    <img src="/menu_Principal/images/5.jpg" alt="" class="img-galeria">
+                    <img src="/menu_Principal/images/6.jpg" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <section class="imagen-light">
+            <img src="/menu_Principal/images/close.svg" alt="" class="close">
+            <img src="/menu_Principal/images/exposicion.jpg" alt="" class="agregar-imagen">
+        </section>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="/menu_Principal/images/compraventa.svg" alt="">
+                    <h3 class="n-expert">COMPRA-VENTA</h3>
+                </div>
+                <div class="cont-expert">       
+                    <img src="/menu_Principal/images/ventas.svg" alt="">
+                    <h3 class="n-expert">EL MEJOR PRECIO</h3>
+                </div> 
+                <div class="cont-expert">
+                    <img src="/menu_Principal/images/tarjeta.svg" alt="">
+                    <h3 class="n-expert">FINANCIACION SIN INTERESES</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">KAR MC'QUEEN</h2>
+                <p>Coches que te inspiran, precios que te sorprenden.</p> 
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/bestcaption_mph/" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="line"></div>
+    </footer>
+    
+    <script src="/menu_Principal/js/menu.js"></script>
+    <script src="/menu_Principal/js/lightbox.js"></script>
 </body>
-
 </html>
