@@ -12,9 +12,11 @@
     <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
     <img class="imagenSuperpuesta" src="/vende_Tucoche/img/630_SUPER_414_3DN_tmb.png" alt="vende_Tucoche">
     <h1 class="compramos_coche">COMPRAMOS TU COCHE</h1>
+        <!--
+
     <div class="formu">
         <h4>¡Introduce los datos de tu coche!</h4>
-        <img class="marco2" src="/vende_Tucoche/img/marco2.jpg" alt="">
+        <img class="marco1" src="/vende_Tucoche/img/marco.jpg" alt="">
         <form class="formu1">
             <div class="lineas">
                 <select id="marca" name="marca" required>
@@ -63,10 +65,12 @@
     </div>
 
 
+--><!--
+    <form class="formu">
+        <h4>¡Introduce tus datos personales!</h4>
+        <img class="marco1" src="/vende_Tucoche/img/marco.jpg" alt="">
 
-    <!--
-    <h4>¡Introduce tus datos personales!</h4>
-    <form>
+        <div class="lineas">
 
         <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" required><br><br>
         <select id="provincia" name="provincia">
@@ -117,56 +121,80 @@
             <option value="zamora">Zamora</option>
             <option value="zaragoza">Zaragoza</option>
         </select><br><br>
+    </div>
+    <div class="lineas">
+
         <input type="email" id="email" name="email" placeholder="Correo electrónico" required><br><br>
         <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required><br><br>
+    </div>
+
+    <div class="lineas">
         <input type="text" id="dni" name="dni" placeholder="DNI" required><br><br>
-        <textarea id="comentario" name="comentario" placeholder="Comentario del cliente..." rows="5"
-            cols="30"></textarea><br><br>
+        <textarea id="comentario" name="comentario" placeholder="Comentario del cliente..." rows="10"
+            cols="40"></textarea><br><br>
+       
+    </div>
+   
         <input type="checkbox" id="polliticas" name="polliticas" required>
         <label for="">Acepto la política de privacidad</label>
         <br><br>
+ 
+    
         <input type="checkbox" id="notificaciones" name="notificaciones">
         <label for="">Activa las notificaciones de novedades</label>
         <br><br>
+    <div class="lineas">
+        <input type="button" class="botones" value="Volver">
+        <input type="submit" class="botones" value="Siguiente">
+    </div>
+        
 
-        <input type="button" value="Volver">
-        <input type="submit" value="Siguiente">
+        -->
+    </form>
+
+   
+    <form class="formu">
+        <h4>¡Tasacción de tu coche, coge cita!</h4>
+        <h4>El precio de ti vehículo es:</h4>
+        <h4><span>de </span>XX.XXX€ <span>a</span> XX.XXX€</h4>
+        <div class="lineas">
+            <select id="provincia" name="provincia">
+                <option value=" " disabled selected>Provincia</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="leon">León</option>
+                <option value="madrid">Madrid</option>
+                <option value="las_palmas">Las Palmas</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="valencia">Valencia</option>
+                <option value="zaragoza">Zaragoza</option>
+            </select><br><br>
+            <select id="Concesionario" name="provincia">
+                <option value=" " disabled selected>Concesionario</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="leon">León</option>
+                <option value="madrid">Madrid</option>
+                <option value="las_palmas">Las Palmas</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="valencia">Valencia</option>
+                <option value="zaragoza">Zaragoza</option>
+            </select>
+        </div>
+       <div class="lineas">
+        <input type="datetime" id="fecha" name="fecha" placeholder="Fecha" required>
+        <input type="datetime" id="hora" name="hora" placeholder="Hora" required>
+
+       </div>
+       <div class="lineas">
+        <input type="button" class="botones" value="Volver">
+        <input type="submit" class="botones" value="Coger cita">
+       </div>
+
+        
+
+       
 
     </form>
 
-    <h4>¡Tasacción de tu coche, coge cita!</h4>
-    <h4>El precio de ti vehículo es:</h4>
-    <h2><span>de</span>XX.XXX€ <span>a</span> XX.XXX€</h2>
-    <form>
-        <select id="provincia" name="provincia">
-            <option value=" " disabled selected>Provincia</option>
-            <option value="barcelona">Barcelona</option>
-            <option value="leon">León</option>
-            <option value="madrid">Madrid</option>
-            <option value="las_palmas">Las Palmas</option>
-            <option value="sevilla">Sevilla</option>
-            <option value="valencia">Valencia</option>
-            <option value="zaragoza">Zaragoza</option>
-        </select><br><br>
-        <select id="Concesionario" name="provincia">
-            <option value=" " disabled selected>Concesionario</option>
-            <option value="barcelona">Barcelona</option>
-            <option value="leon">León</option>
-            <option value="madrid">Madrid</option>
-            <option value="las_palmas">Las Palmas</option>
-            <option value="sevilla">Sevilla</option>
-            <option value="valencia">Valencia</option>
-            <option value="zaragoza">Zaragoza</option>
-        </select><br><br>
-
-        <input type="datetime" id="fecha" name="fecha" placeholder="Fecha" required><br><br>
-        <input type="datetime" id="hora" name="hora" placeholder="Hora" required><br><br>
-
-        <input type="button" value="Volver">
-        <input type="submit" value="Coger cita">
-
-    </form>
--->
 
 
 </body>

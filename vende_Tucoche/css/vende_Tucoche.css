@@ -118,6 +118,15 @@ body {
   margin-left: 10%;
   margin-top: 0%;
 }
+.marco1 {
+  width: 79%;
+  /* O el ancho que desees */
+  height: 44%;
+  /* O la altura que desees */
+  /* O 'absolute' si prefieres posicionar relativo a un contenedor */
+  margin-left: 10%;
+  margin-top: 0%;
+}
 
 .lineas label,
 .lineas input,
