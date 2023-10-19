@@ -1,0 +1,140 @@
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;    /* OCULTA LOS ELEMENTOS */
+    margin: auto;        /* LO CENTRA TODO */
+    padding: 60px 0;     /* PADDING 60PX ARRIBA Y ABAJO Y 0 PX A LOS LADOS - ESPACIADO ENTRE LOS ELEMENTOS - */
+    
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;      /* POSICIONAR VERTICAL Y HORIZONTALMENTE */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+header{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.divimagen{
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    grid-template-columns: none;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 15rem;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;  
+    border-radius: 25px; 
+    transition: opacity 0.5s;  /* ESTO HARA QUE CUANDO DEJE DE ESTAR EL RATON POR ENCIMA NO QUITE BRUSCAMENTE LA ANIMACION */
+}
+
+.imagen-light{
+    position: fixed;    /* QUE SE FIJE A LA PAGINA */
+    background: rgba(0, 0, 0,.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);     /* CON ESTE CODIGO GUARDAMOS LA FOTO PARA PODER CLICKAR EN EL Y CON JS HACER QUE SE AMPLIE AL TOCARLA */
+    transition: transform .2s ease-in-out;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);            /* CON ESTE CODIGO GUARDAMOS LA FOTO PARA PODER CLICKAR EN EL Y CON JS HACER QUE SE AMPLIE AL TOCARLA */
+    transition: transform .3s .2s;  /* CON ESTE CODIGO GUARDAMOS LA FOTO PARA PODER CLICKAR EN EL Y CON JS HACER QUE SE AMPLIE AL TOCARLA */
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw; /* VIEW PER WIDTH 30% DE ANCHO DE LA PAGINA */
+    height: 100%;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    display: flex;
+    flex-direction: column;     /* PARA QUE SE PONGAN UNO ENCIMA DE OTRO */
+    justify-content: space-evenly;    /* REPARTE ESPACIO EQUITATIVAMENTE VERTICALMENTE */
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.contact-us{
+    color: white;
+    width: 40%;
+}
+
+.social-media-icon:hover{
+    background:  white;
+    color: #ff5500;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}

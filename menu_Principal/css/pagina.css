@@ -158,7 +158,6 @@ header{
     cursor: pointer;  
     border-radius: 25px; 
     transition: opacity 0.5s;  /* ESTO HARA QUE CUANDO DEJE DE ESTAR EL RATON POR ENCIMA NO QUITE BRUSCAMENTE LA ANIMACION */
-
 }
 
 .imagen-light{
