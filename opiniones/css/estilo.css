@@ -1,0 +1,21 @@
+:root {
+    --blanco_roto:#EDE8D9;
+    --naranja: #FF5035;
+    --azul_oscuro: #17191D;
+    --naranja_claro: #FE8A78;
+}
+.fondo {
+    background-color: var(--blanco_roto);
+}
+.fondo_2{
+    background-color: var(--azul_oscuro);
+    
+}
+.imagen2{
+    width: 590px;
+    height: 8px;
+}
+.imagen{
+    width: 250px;
+    height: 200px;
+}
