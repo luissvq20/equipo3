@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KARMC'QUEEN</title>
     <link rel="stylesheet" type="text/css" href="/vende_Tucoche/css/vende_Tucoche.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <img src="/menu_Principal/images/menu.svg" alt="" class="hamburger">
+    <nav class="menu-navegacion">
+        <a href="/compra_Tucoche/compra_Tucoche.html">COMPRA TU COCHE</a>
+        <a href="/vende_Tucoche/html/vende_Tucoche.html">VENDE TU COCHE</a>
+        <a href="/sobre_nosotros/html/sobre_nosotros.html">SOBRE NOSOTROS</a>
+        <a href="/opiniones/html/opiniones.html">OPINIONES</a>
+        <a href="#contacto">CONTACTO</a>
+    </nav>
     <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
     <img class="imagenSuperpuesta" src="/vende_Tucoche/img/630_SUPER_414_3DN_tmb.png" alt="vende_Tucoche">
     <h1 class="compramos_coche">COMPRAMOS TU COCHE</h1>
-        <!--
+        
 
-    <div class="formu">
+    <!-- <div class="formu">
         <h4>¡Introduce los datos de tu coche!</h4>
         <img class="marco1" src="/vende_Tucoche/img/marco.jpg" alt="">
         <form class="formu1">
@@ -51,24 +61,24 @@
                 <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required><br><br>
             </div>
 
-            <input type="submit" class="botones" value="Siguiente">
+            <input type="button" class="botones" value="Siguiente">
         </form>
 
         <div class="contacta_duda">
             <h3>¿Tienes alguna duda?</h3>
-            <h2>980 080 807</h2>
+            <span>980 080 807</span>
             <h3>¡¡Llamanos!!</h3>
         </div>
 
 
 
-    </div>
+    </div> -->
 
 
---><!--
+
     <form class="formu">
         <h4>¡Introduce tus datos personales!</h4>
-        <img class="marco1" src="/vende_Tucoche/img/marco.jpg" alt="">
+        <img class="marco1" src="/vende_Tucoche/img/marco1.jpg" alt="">
 
         <div class="lineas">
 
@@ -145,18 +155,21 @@
         <br><br>
     <div class="lineas">
         <input type="button" class="botones" value="Volver">
-        <input type="submit" class="botones" value="Siguiente">
+        <input type="button" class="botones" value="Siguiente">
     </div>
         
 
-        -->
+        
     </form>
 
-   
+<!--    
     <form class="formu">
         <h4>¡Tasacción de tu coche, coge cita!</h4>
-        <h4>El precio de ti vehículo es:</h4>
-        <h4><span>de </span>XX.XXX€ <span>a</span> XX.XXX€</h4>
+        <h3>El precio de ti vehículo es:</h3>
+        <div class="rango">
+            <h3>de <span>XX.XXX€</span> a <span>XX.XXX€</span> </h3>
+
+        </div>
         <div class="lineas">
             <select id="provincia" name="provincia">
                 <option value=" " disabled selected>Provincia</option>
@@ -180,23 +193,23 @@
             </select>
         </div>
        <div class="lineas">
-        <input type="datetime" id="fecha" name="fecha" placeholder="Fecha" required>
-        <input type="datetime" id="hora" name="hora" placeholder="Hora" required>
+        <input type="date" id="fecha" name="fecha" placeholder="Fecha" required>
+        <input type="time" id="hora" name="hora" placeholder="Hora" required>
 
        </div>
        <div class="lineas">
         <input type="button" class="botones" value="Volver">
-        <input type="submit" class="botones" value="Coger cita">
+        <input type="button" class="botones" value="Coger cita">
        </div>
 
         
 
        
 
-    </form>
+    </form> -->
 
 
-
+    <script src="/vende_Tucoche/js/menu.js"></script>
 </body>
 
 </html>

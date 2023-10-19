@@ -44,6 +44,45 @@ body {
   justify-content: center;
   align-items: center;
   /*background: linear-gradient(to bottom, var(--azul_oscuro) 10%, var(--blanco_roto) 80%);*/
+  
+}
+
+.hamburger{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: rgb(0, 0, 0);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;    /* Cada vez que pasas el RATON POR ENCIMA aparece la MANITA */
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+}
+.menu-navegacion{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw; /* VIEW PER WIDTH 30% DE ANCHO DE LA PAGINA */
+  height: 100%;
+  background-image: linear-gradient(to right, var(--azul_oscuro) 0%, var(--azul_oscuro) 100%);
+  display: flex;
+  flex-direction: column;     /* PARA QUE SE PONGAN UNO ENCIMA DE OTRO */
+  justify-content: space-evenly;    /* REPARTE ESPACIO EQUITATIVAMENTE VERTICALMENTE */
+  align-items: center;
+  transition: transform .3s ease-in-out;
+  transform: translate(110%);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+
+}
+.spread{
+  transform: translate(0);
+}
+
+.menu-navegacion a{
+  color: #fff;
+  text-decoration: none;
 }
 
 .logo {
@@ -57,11 +96,11 @@ body {
 }
 
 .compramos_coche {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: var(--naranja);
   margin-left: 30%;
-  font-size: 7rem;
+  font-size: 6rem;
   margin-top: 5%;
   margin-bottom: 2%;
 }
@@ -92,13 +131,39 @@ body {
 
 .formu h4 {
   color: var(--azul_oscuro);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 3rem;
   margin-left: 35%;
   margin-top: 0%;
   margin-bottom: 2%;
 
+
+}
+.formu h3 {
+  color: var(--azul_oscuro);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-left: 7%;
+  margin-top: 0%;
+  margin-bottom: 2%;
+
+
+}
+.formu h3 span {
+  color: var(--naranja);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: 0%;
+  margin-bottom: 2%;
+
+
+}
+
+.rango{
+  margin-left: 25%;
 
 }
 
@@ -130,7 +195,8 @@ body {
 
 .lineas label,
 .lineas input,
-.lineas select {
+.lineas select,
+.lineas textarea {
   margin: 3%;
   width: 48%;
   min-width: 15rem;
@@ -165,7 +231,8 @@ body {
 
 input,
 select,
-label {
+label,
+textarea {
   border-color: var(--naranja);
   border-radius: 0.5rem;
   background-color: #f7efee;
@@ -180,14 +247,28 @@ input[type]:focus {
   outline: 0 none;
 }
 
-.contacta_duda {
+.contacta_duda{
+  margin-top: 3%;
   text-align: center;
   color: var(--azul_oscuro);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
+  font-size: 1;
 }
 
-.contacta_duda h4 {
+.contacta_duda h3 {
   padding-bottom: 0%;
+  margin-left: 0%;
+  font-size: 2rem;
+
 }
 
+.contacta_duda span{
+  color: var(--naranja);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
