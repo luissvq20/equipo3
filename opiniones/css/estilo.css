@@ -1,13 +1,13 @@
 :root {
     --blanco_roto: #EDE8D9;
-    --blanco_clarito : FBF8DA;
+    --blanco_clarito: FBF8DA;
     --naranja: #FF5035;
     --azul_oscuro: #17191D;
     --naranja_claro: #FE8A78;
     --gris_claro: #b7b8b7;
 }
 
-body::before {
+body {
     content: "";
     position: absolute;
     top: 0;
@@ -20,18 +20,7 @@ body::before {
     z-index: -1;
 }
 
-body::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 90.7%;
-    /* Divide el fondo en dos partes, cada una con el 50% de altura */
-    background-color: var(--blanco_roto);
-    /* Color de la mitad inferior */
-    z-index: -1;
-}
+
 
 header {
     background-color: var(--azul_oscuro);
@@ -56,40 +45,111 @@ header .imagen {
     flex-direction: row;
     width: 100%;
     height: 5px;
+
     background-color: var(--naranja_claro);
+}
+
+.linea_negra {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 1px;
+
+    background-color: black;
+}
+
+.container-opiniones_formulario {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
 }
 
 .container-opiniones {
     margin-top: 50px;
+    margin: 50px;
+
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
+
+    background-color: var(--azul_oscuro);
+    border-radius: 30px;
 }
 
 .container-opiniones .opiniones-titulo {
-    background-color: var(--blanco_roto);
 
     margin: auto;
     padding: 20px;
 
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     border-radius: 20px;
 
-    text-shadow: 5px 5px var(--naranja);
-    color: ;
+    background-color: var(--blanco_clarito);
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--naranja_claro);
 }
 
- .container-opiniones .opiniones {
+.container-opiniones .opiniones {
     background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 5px;
+
+    text-align: justify;
+
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--naranja);
+}
+
+.container-haz_comentario {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: auto;
-    text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    border: 1px transparent solid;
-    border-radius: 10px;
-    padding: 10px;
 
+    background-color: var(--azul_oscuro);
+    border-radius: 20px;
+    margin: 50px;
+
+}
+
+.container-haz_comentario .formulario {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 26%;
+}
+
+.formulario .titulo_formulario {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--naranja_claro);
+}
+
+.container-haz_comentario .labels {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px
+}
+
+.labels input,
+select {
+    text-size-adjust: 100%;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: var(--naranja);
+    background-color: #f7efee;
 }
