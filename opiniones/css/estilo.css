@@ -1,21 +1,95 @@
 :root {
-    --blanco_roto:#EDE8D9;
+    --blanco_roto: #EDE8D9;
+    --blanco_clarito : FBF8DA;
     --naranja: #FF5035;
     --azul_oscuro: #17191D;
     --naranja_claro: #FE8A78;
+    --gris_claro: #b7b8b7;
 }
-.fondo {
-    background-color: var(--blanco_roto);
-}
-.fondo_2{
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9.1%;
+    /* Divide el fondo en dos partes, cada una con el 50% de altura */
     background-color: var(--azul_oscuro);
-    
+    /* Color de la mitad superior */
+    z-index: -1;
 }
-.imagen2{
-    width: 590px;
-    height: 8px;
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90.7%;
+    /* Divide el fondo en dos partes, cada una con el 50% de altura */
+    background-color: var(--blanco_roto);
+    /* Color de la mitad inferior */
+    z-index: -1;
 }
-.imagen{
-    width: 250px;
-    height: 200px;
+
+header {
+    background-color: var(--azul_oscuro);
+    background-size: cover;
+    margin: 0%;
+    background-color: var(--azul_oscuro);
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+}
+
+header .imagen {
+    padding: 10px;
+    margin: auto;
+    width: fit-content;
+    width: 25%;
+}
+
+.linea_naranja {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5px;
+    background-color: var(--naranja_claro);
+}
+
+.container-opiniones {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-opiniones .opiniones-titulo {
+    background-color: var(--blanco_roto);
+
+    margin: auto;
+    padding: 20px;
+
+    margin-bottom: 30px;
+    border-radius: 20px;
+
+    text-shadow: 5px 5px var(--naranja);
+    color: ;
+}
+
+ .container-opiniones .opiniones {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border: 1px transparent solid;
+    border-radius: 10px;
+    padding: 10px;
+
 }
