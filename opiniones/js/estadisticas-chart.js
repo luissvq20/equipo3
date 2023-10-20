@@ -22,11 +22,11 @@ Highcharts.chart('estadisticas-charts', {
     yAxis: {
         min: 0,
         title: {
-            text: '1000 metric tons (MT)'
+            text: ''
         }
     },
     tooltip: {
-        valueSuffix: ' (1000 MT)'
+        valueSuffix: ' '
     },
     plotOptions: {
         column: {
@@ -37,7 +37,7 @@ Highcharts.chart('estadisticas-charts', {
     series: [
         {
             name: 'Marcas',
-            data: [51086, 136000, 5500, 141000, 107180, 77000]
+            data: [30000, 70000, 90000, 50000, 60000]
         }
     ]
 });

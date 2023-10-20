@@ -14,11 +14,11 @@
     <header class="header" id="inicio">
         <img src="/menu_Principal/images/menu.svg" alt="" class="hamburger">
         <nav class="menu-navegacion">
-            <a href="/vende_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a>
+            <a href="/menu_Principal/html/menu_Principal.html">INICIO</a>
+            <a href="/compra_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a>
             <a href="/vende_Tucoche/html/vende_Tucoche.html">VENDE TU COCHE</a>
-            <a href="#portafolio">SOBRE NOSOTROS</a>
-            <a href="#tarifa">OPINIONES</a>
-            <a href="#contacto">CONTACTO</a>
+            <a href="/opiniones/html/opiniones.html">OPINIONES</a>
+            <a href="/sobre_nosotros/html/sobre_nosotros.html">CONTACTO</a>
         </nav>
         <header>
             <img class="imagen" src="/opiniones/img/logoSINFONDOchica.png" alt="logo">
@@ -42,7 +42,7 @@
                             <p> <strong>CARLA SOFIA M.</strong> | Sevilla | Skoda Fabia, 2009</p>
                         </div>
                         <div class="imagen-like">
-                            <img src="/opiniones/img/me-gusta.png" id="like">
+                            <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
                         </div>
                     </div>
                     <div class="ec-stars-wrapper">
@@ -74,7 +74,7 @@
                             <p> <strong>ANITA ANGELA C.</strong> | Sevilla | Citroen C4 Cactus, 2017</p>
                         </div>
                         <div class="imagen-like">
-                            <img src="/opiniones/img/me-gusta.png" id="like">
+                            <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
                         </div>
                     </div>
                     <div class="ec-stars-wrapper">
@@ -108,7 +108,7 @@
                             <p> <strong>Pedro C.</strong> | Sevilla | Renault Laguna, 2012 </p>
                         </div>
                         <div class="imagen-like">
-                            <img src="/opiniones/img/me-gusta.png" id="like">
+                            <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
                         </div>
                     </div>
                     <div class="ec-stars-wrapper">
@@ -140,7 +140,7 @@
                             <p> <strong>Manuel A.</strong> | Madrid | Renault clio, 2017 </p>
                         </div>
                         <div class="imagen-like">
-                            <img src="/opiniones/img/me-gusta.png" id="like">
+                            <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
                         </div>
                     </div>
                     <div class="ec-stars-wrapper">
@@ -164,10 +164,10 @@
                 </div>
             </div>
         </div>
+        <div class="titulo-estadisticas">
+            <h1>DATOS CURIOSOS</h1>
+        </div>
         <div class="container-estadisticas">
-            <div class="tabla-datos">
-                
-            </div>
             <div class="estadisticas">
                 <figure class="highcharts-figure">
                     <div id="estadisticas-charts"></div>
@@ -175,11 +175,19 @@
                     </p>
                 </figure>
             </div>
+            <div class="tabla-datos">
+                <figure class="highcharts-figure">
+                    <div id="circulo-estadisticas_chart"></div>
+                    <p class="highcharts-description">
+
+                    </p>
+                </figure>
+            </div>
         </div>
         <footer id="contacto">
             <div class="contenedor footer-content">
                 <div class="contact-us">
-                    <h2 class="brand">KAR MC'QUEEN</h2>
+                    <img src="/opiniones/img/logoSINFONDOchica.png" width="300" class="brand">
                     <p>Coches que te inspiran, precios que te sorprenden.</p>
                 </div>
                 <div class="social-media">
@@ -190,12 +198,25 @@
             </div>
             <div class="line"></div>
         </footer>
+
+        <!-- Llamamos al js del menu -->
         <script src="/menu_Principal/js/menu.js"></script>
+
+        <!-- Importamos las librerías de Highcharts y llamamos al js para las estadisiticas en barra -->
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
         <script src="https://code.highcharts.com/modules/accessibility.js"></script>
         <script src="/opiniones/js/estadisticas-chart.js"></script>
+
+        <!--Importamos las librerías de Highcharts y llegamos al js para el circulo de estadisiticas-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+        <script src="/opiniones/js/estadisiticas_circulo-chart.js"></script>
 </body>
 
 </html>
