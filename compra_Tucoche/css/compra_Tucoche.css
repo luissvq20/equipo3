@@ -15,36 +15,44 @@ body {
   background-color: var(--azul_oscuro);
 
   font-size: 16px;
+  
+  /*background: linear-gradient(to bottom, var(--azul_oscuro) 10%, var(--blanco_roto) 80%);*/
+
+}
+.coches_disponibles{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*background: linear-gradient(to bottom, var(--azul_oscuro) 10%, var(--blanco_roto) 80%);*/
-  
 }
 
-.hamburger{
+.hamburger {
   position: fixed;
   top: 30px;
   right: 30px;
   background: rgb(0, 0, 0);
   width: 40px;
   height: 40px;
-  cursor: pointer;    /* Cada vez que pasas el RATON POR ENCIMA aparece la MANITA */
+  cursor: pointer;
+  /* Cada vez que pasas el RATON POR ENCIMA aparece la MANITA */
   border-radius: 10px;
   box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 
 }
-.menu-navegacion{
+
+.menu-navegacion {
   position: fixed;
   top: 0;
   right: 0;
-  width: 30vw; /* VIEW PER WIDTH 30% DE ANCHO DE LA PAGINA */
+  width: 30vw;
+  /* VIEW PER WIDTH 30% DE ANCHO DE LA PAGINA */
   height: 100%;
   background-image: linear-gradient(to right, var(--azul_oscuro) 0%, var(--azul_oscuro) 100%);
   display: flex;
-  flex-direction: column;     /* PARA QUE SE PONGAN UNO ENCIMA DE OTRO */
-  justify-content: space-evenly;    /* REPARTE ESPACIO EQUITATIVAMENTE VERTICALMENTE */
+  flex-direction: column;
+  /* PARA QUE SE PONGAN UNO ENCIMA DE OTRO */
+  justify-content: space-evenly;
+  /* REPARTE ESPACIO EQUITATIVAMENTE VERTICALMENTE */
   align-items: center;
   transition: transform .3s ease-in-out;
   transform: translate(110%);
@@ -52,11 +60,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 
 }
-.spread{
+
+.spread {
   transform: translate(0);
 }
 
-.menu-navegacion a{
+.menu-navegacion a {
   color: #fff;
   text-decoration: none;
 }
@@ -81,22 +90,17 @@ body {
   margin-bottom: 2%;
 }
 
-.filtros_coches {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.filtro_coches {
+display: flex;
 
 }
 
 .filtro {
- /* Esto hace que el div de la izquierda ocupe todo el espacio restante */
- max-width: 15%; /* Define el ancho máximo del div de la izquierda */
+
   background-color: var(--blanco_roto);
   padding: 1.5%;
-  width: 120rem;
-  /* Ancho del div en relación al contenedor padre */
-  
+ max-height:50rem;
+border-radius: 1rem;
 
 }
 
@@ -111,6 +115,7 @@ body {
 
 
 }
+
 .filtro h3 {
   color: var(--naranja);
   font-family: 'Montserrat', sans-serif;
@@ -122,7 +127,18 @@ body {
 
 
 }
+
 .filtro h3 span {
+  margin-top: 50px;
+  margin: 50px;
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  background-color: var(--azul_oscuro);
+  border-radius: 30px;
+
   color: var(--naranja);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -133,26 +149,13 @@ body {
 
 }
 
-.coches{
-  /* Esto hace que el div de la izquierda ocupe todo el espacio restante */
-  max-width: 15%; /* Define el ancho máximo del div de la izquierda */
-   background-color: var(--blanco_roto);
-   padding: 1.5%;
-   width: 120rem;
-}
-
-.rango{
-  margin-left: 25%;
-
-}
-
 
 
 
 label,
 input,
 select,
- textarea {
+textarea {
   margin: 3%;
   width: 48%;
   min-width: 15rem;
@@ -165,9 +168,7 @@ select,
 }
 
 .botones {
-  margin-left: 60%;
-  margin: 3%;
-  width: 48%;
+  margin: 0%;
   min-width: 15rem;
   max-width: 20rem;
   min-height: 3rem;
@@ -177,6 +178,8 @@ select,
   color: var(--blanco_roto);
   background-color: var(--naranja);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 0px 25px 0px 25px
+
 }
 
 .botones:hover {
@@ -203,4 +206,55 @@ input[type]:focus {
   outline: 0 none;
 }
 
+.coches {
+  
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 0%;
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-galeria{
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;  
+  border-radius: 25px 25px 0px 0px; 
+  padding: 0%;  
+}
+
+
+
+.divimagen{
+  background-color: var(--blanco_roto);
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  margin: 1%;
+
+}
+
+.texto{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 2rem;
+}
+
+.precio{
+  color: var(--naranja);
+  font-size: 4rem;
+  font-weight: bold;
+}
+.desde{
+  font-size: 1,5rem;
+}
+.nombre{
+  font-size: 3rem;
+
+}
+.divimagen p{
+  margin: 0%;
+
+}
 

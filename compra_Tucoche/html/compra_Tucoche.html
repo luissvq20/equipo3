@@ -13,14 +13,18 @@
 <body>
     <img src="/menu_Principal/images/menu.svg" alt="" class="hamburger">
     <nav class="menu-navegacion">
-        <a href="/compra_Tucoche/compra_Tucoche.html">COMPRA TU COCHE</a>
+        <a href="/compra_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a>
         <a href="/vende_Tucoche/html/vende_Tucoche.html">VENDE TU COCHE</a>
         <a href="/sobre_nosotros/html/sobre_nosotros.html">SOBRE NOSOTROS</a>
         <a href="/opiniones/html/opiniones.html">OPINIONES</a>
         <a href="#contacto">CONTACTO</a>
     </nav>
-    <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
-    <h1 class="compramos_coche">COCHES DISPONIBLES!!</h1>
+
+    <div class="coches_disponibles">
+        <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
+        <h1 class="compramos_coche">COCHES DISPONIBLES!!</h1>
+
+    </div>
 
     <div class="filtro_coches">
         <div class="filtro">
@@ -41,21 +45,77 @@
     
                     </select><br><br>
     
-                    <input type="text" id="modelo" name="modelo" placeholder="Modelo" required><br><br>
-                    <input type="text" id="ano" name="ano" placeholder="Año" required><br><br>
-                
-                    <input type="text" id="carroceria" name="carroceria" placeholder="Carrocería" required><br><br>
-                    <input type="text" id="transmision" name="transmision" placeholder="Transmisión" required><br><br>
+                    <select id="modelo" name="modelo" required>
+                        <option value=" " disabled selected>Modelo</option>
+                        <option value="AUDI">AUDI</option>
+                        <option value="BMW">BMW</option>
+                        <option value="PEUGEOT">PEUGEOT</option>
+                        <option value="MERCEDES">MERCEDES</option>
+                        <option value="SEAT">SEAT</option>
+                        <option value="NISSAN">NISSAN</option>
+                        <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
+                        <option value="SKODA">SKODA</option>
+                        <option value="FORD">FORD</option>
+    
+                    </select><br><br>   
+                    
+                    <select id="precio" name="precio" required>
+                        <option value=" " disabled selected>Precio</option>
+                        <option value="AUDI">AUDI</option>
+                        <option value="BMW">BMW</option>
+                        <option value="PEUGEOT">PEUGEOT</option>
+                        <option value="MERCEDES">MERCEDES</option>
+                        <option value="SEAT">SEAT</option>
+                        <option value="NISSAN">NISSAN</option>
+                        <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
+                        <option value="SKODA">SKODA</option>
+                        <option value="FORD">FORD</option>
+    
+                    </select><br><br>  
+                    <select id="ano" name="ano" required>
+                        <option value=" " disabled selected>Año</option>
+                        <option value="AUDI">AUDI</option>
+                        <option value="BMW">BMW</option>
+                        <option value="PEUGEOT">PEUGEOT</option>
+                        <option value="MERCEDES">MERCEDES</option>
+                        <option value="SEAT">SEAT</option>
+                        <option value="NISSAN">NISSAN</option>
+                        <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
+                        <option value="SKODA">SKODA</option>
+                        <option value="FORD">FORD</option>
+    
+                    </select><br><br>                  
+
                     <select id="combustible" name="combustible">
                         <option value=" " disabled selected>Combustible</option>
                         <option value="diesel">Diesel</option>
                         <option value="gasonlina">Gasolina</option>
                     </select><br><br>
+
+                    <select id="caja_cambios" name="caja_cambios">
+                        <option value=" " disabled selected>Caja de cambios</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="gasonlina">Gasolina</option>
+                    </select><br><br>
+
+                    <select id="plazas" name="plazas">
+                        <option value=" " disabled selected>NºPlazas</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="gasonlina">Gasolina</option>
+                    </select><br><br>
+
+                    <select id="carroceria" name="carroceria">
+                        <option value=" " disabled selected>Carroceria</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="gasonlina">Gasolina</option>
+                    </select><br><br>
+
+                    <select id="cuota" name="cuota">
+                        <option value=" " disabled selected>Cuota/mes</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="gasonlina">Gasolina</option>
+                    </select><br><br>
                
-                    <input type="text" id="version" name="version" placeholder="Versión" required><br><br>
-                    <input type="text" id="km" name="km" placeholder="Kilómetros" required><br><br>
-                    <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required><br><br>
-    
             </form>
     
     
@@ -63,12 +123,75 @@
     
         </div>
         <div class="coches">
+                        <div class="divimagen">
+                            <div>
+                                <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
+                            </div>
+                           <div class="texto">
+                            <p class="desde">Desde 300€/mes</p>
+                            <p class="precio">19.990€</p>
+                            <p class="nombre">VW Arteon</p>
+                            <p>2.0 TDI 190 quatt Str Attraction</p>
+                            <p>2020 | 80.321km | DIESEL | Automatico</p>
+                        </div>
+                        <input type="button" class="botones" value="Ver info">
+
+                        </div>
+                        
+                        <div class="divimagen">
+                            <div >
+                                <img src="/menu_Principal/images/3.jpg" alt="" class="img-galeria" >
+                            </div>
+                            <div class="texto">
+                                <p class="desde">Desde 250€/mes</p>
+                                <p class="precio">12.890€</p>
+                                <p class="nombre">BMW E36</p>
+                                <p>2.5i Coupe</p>
+                                <p>2019 | 150.015km | GASOLINA | Manual </p>
+                            </div>
+                            <input type="button" class="botones" value="Ver info">
+
+                        </div>
+                        
+                        <div class="divimagen">
+                            <div>
+                                <img src="/menu_Principal/images/4.jpg" alt="" class="img-galeria">
+
+                            </div>
+                            <div class="texto">
+                                <p class="desde">Desde 320€/mes</p>
+                                <p class="precio">22.750€</p>
+                                <p class="nombre">Mercedes Clase A</p>
+                                <p>A 200 CDI AMG Line</p>
+                                <p>2021 | 45.210km | DIESEL | Automatico </p>
+                            </div>
+                            <input type="button" class="botones" value="Ver info">
+
+                        </div>
+    
+                        <div class="divimagen">
+                            <div>
+                                <img src="/menu_Principal/images/imagengolf.jpeg" alt="" class="img-galeria">
+
+                            </div>
+                            <div class="texto">
+                                <p class="desde">Desde 270€/mes</p>
+                                <p class="precio">14.950€</p>
+                                <p class="nombre">VW Golf</p>
+                                <p>1.4 TSI Comfortline</p>
+                                <p>2017 | 95.750km | GASOLINA | Automatico </p>
+                            </div>
+                            <input type="button" class="botones" value="Ver info">
+
+                        </div>
+                    
         </div>
     </div>
     
 
 
     <script src="/vende_Tucoche/js/menu.js"></script>
+
 </body>
 
 </html>
