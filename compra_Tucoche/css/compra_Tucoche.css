@@ -239,6 +239,7 @@ input[type]:focus {
 .texto{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 2rem;
+  margin-bottom: 4%;
 }
 
 .precio{
