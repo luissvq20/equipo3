@@ -5,7 +5,7 @@
 
 .titulo{
     padding: 10px;
-    margin: auto;
+    margin: 27em auto;
     width: fit-content;
     width: 25%;
 }
@@ -143,6 +143,12 @@ p, h1, h2{
     
 }
 
+.infoadicional h1{
+    justify-content: center;
+    display: flex;
+    margin: 1em;
+}
+
 .contenedor-galeria{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -153,12 +159,80 @@ p, h1, h2{
     background-color: #EDE8D9;
     border-radius: 26px;
 }
+.texto{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 2rem;
+    margin-bottom: 4%;
+  }
+.desde{
+    font-size: 1,5rem;
+  }
 
+  .precio{
+   color: #ff5500;
+    font-size: 3rem;
+    font-weight: bold;
+  }
 
+  .nombre{
+    font-size: 3rem;
+  
+  }
 
+  .divimagen p{
+    margin: 0%;
+    font-weight: 700;
+  }
+  .boton1{
+    font-size: xx-large;
+    margin: 1em auto auto 1em;
+    transition: transform 0.3s;
+    
+  }
 
+  .coches_disponibles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    position: absolute;
+    /* O 'absolute' si prefieres posicionar relativo a un contenedor */
+    z-index: 9999;
+    /* Un valor alto para asegurar que esté en la parte superior */
+    top: 3%;
+    width: auto;
+    height: 3rem;
+  }
 .custom-dropdown {
-    width: 200px;
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.custom-dropdown1 {
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.custom-dropdown2 {
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.custom-dropdown3 {
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.custom-dropdown4 {
+    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .dropdown-header {
@@ -169,10 +243,10 @@ p, h1, h2{
     color: #000000;
     cursor: pointer;
     width: 700px;
-    height: 50px;
+    height: 120px;
     transition: transform .5s;
     font-weight: 1000;
-    font-size: large;
+    font-size: 400%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -198,13 +272,14 @@ p, h1, h2{
     color: #000000;
     cursor: pointer;
     width: 700px;
-    height: 50px;
+    height: 120px;
     transition: transform .5s;
     font-weight: 1000;
-    font-size: large;
+    font-size: 400%;
     justify-content: center;
     align-items: center;
     display: flex;
+    
 }
 
 .dropdown-content1 {
@@ -226,10 +301,10 @@ p, h1, h2{
     color: #000000;
     cursor: pointer;
     width: 700px;
-    height: 50px;
+    height: 120px;
     transition: transform .5s;
     font-weight: 1000;
-    font-size: large;
+    font-size: 400%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -254,10 +329,10 @@ p, h1, h2{
     color: #000000;
     cursor: pointer;
     width: 700px;
-    height: 50px;
+    height: 120px;
     transition: transform .5s;
     font-weight: 1000;
-    font-size: large;
+    font-size: 400%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -282,10 +357,10 @@ p, h1, h2{
     color: #000000;
     cursor: pointer;
     width: 700px;
-    height: 50px;
+    height: 120px;
     transition: transform .5s;
     font-weight: 1000;
-    font-size: large;
+    font-size: 400%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -332,6 +407,7 @@ p, h1, h2{
 
 .boton{
     transition: transform 0.3s;
+    font-size: x-large;
 }
 
 .boton:hover{
@@ -339,3 +415,55 @@ p, h1, h2{
     transform: scale(1.1);
     opacity: 0.8;
 }
+.boton1:hover{
+    background-color: #ff5500;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.hamburger{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;    /* Cada vez que pasas el RATON POR ENCIMA aparece la MANITA */
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw; /* VIEW PER WIDTH 30% DE ANCHO DE LA PAGINA */
+    height: 100%;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    display: flex;
+    flex-direction: column;     /* PARA QUE SE PONGAN UNO ENCIMA DE OTRO */
+    justify-content: space-evenly;    /* REPARTE ESPACIO EQUITATIVAMENTE VERTICALMENTE */
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
