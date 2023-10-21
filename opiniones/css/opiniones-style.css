@@ -10,6 +10,7 @@
 body {
     width: 100%;
     background-color: var(--azul_oscuro);
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -94,9 +95,9 @@ header .imagen {
 
 .titulo .opiniones-titulo {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
     color: var(--blanco_roto);
+    text-shadow: 2px 2px var(--naranja_claro);
 }
 
 .container-opiniones {
@@ -338,15 +339,18 @@ a {
     display: flex;
     margin: auto;
     align-items: center;
+
     text-align: center;
     color: var(--blanco_roto);
-
+    text-shadow: 2px 2px var(--naranja_claro);
     font-size: large;
 }
 
 .container-estadisticas {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    margin: auto;
 
 }
 
