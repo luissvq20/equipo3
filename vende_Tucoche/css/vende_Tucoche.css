@@ -108,8 +108,8 @@ body {
 .imagenSuperpuesta {
   position: absolute;
   /* O 'absolute' si prefieres posicionar relativo a un contenedor */
-  top: 6%;
-  left: 9%;
+  top: 1%;
+  left: 4%;
   width: 33%;
   /* O el ancho que desees */
   height: 33%;
@@ -209,12 +209,7 @@ body {
 
 }
 
-.lineas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
+
 
 .marco2 {
   width: 80%;
@@ -295,6 +290,7 @@ input[type]:focus {
   padding-bottom: 0%;
   margin-left: 0%;
   font-size: 2rem;
+  margin-bottom: 0%;
 
 }
 
