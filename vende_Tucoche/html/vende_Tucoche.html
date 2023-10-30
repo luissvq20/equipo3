@@ -7,6 +7,8 @@
     <title>KARMC'QUEEN</title>
     <link rel="stylesheet" type="text/css" href="/vende_Tucoche/css/vende_Tucoche.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/BootStrap/css/bootstrap.min.css">
+    <script src="/BootStrap/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -23,56 +25,90 @@
     <img class="imagenSuperpuesta" src="/vende_Tucoche/img/630_SUPER_414_3DN_tmb.png" alt="vende_Tucoche">
     <h1 class="compramos_coche">COMPRAMOS TU COCHE</h1>
 
+    <div class="container-80">
 
-    <div class="formu">
-        <h4>¡Introduce los datos de tu coche!</h4>
-        <img class="marco1" src="/vende_Tucoche/img/marco.jpg" alt="">
-        <form class="formu1">
-            <div class="lineas">
-                <select id="marca" name="marca" required>
-                    <option value=" " disabled selected>Marca</option>
-                    <option value="AUDI">AUDI</option>
-                    <option value="BMW">BMW</option>
-                    <option value="PEUGEOT">PEUGEOT</option>
-                    <option value="MERCEDES">MERCEDES</option>
-                    <option value="SEAT">SEAT</option>
-                    <option value="NISSAN">NISSAN</option>
-                    <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
-                    <option value="SKODA">SKODA</option>
-                    <option value="FORD">FORD</option>
 
-                </select><br><br>
+        <div class="row">
 
-                <input type="text" id="modelo" name="modelo" placeholder="Modelo" required><br><br>
-                <input type="text" id="ano" name="ano" placeholder="Año" required><br><br>
+            <div class="formu-primera-pag col-12 col-md-12 col-lg-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <h4>¡Introduce los datos de tu coche!</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <img class="marco1" src="/vende_Tucoche/img/marco.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row row-cols-2 row-cols-lg-3">
+                        <div class="col">
+                            <select id="marca" name="marca" required>
+                                <option value=" " disabled selected>Marca</option>
+                                <option value="AUDI">AUDI</option>
+                                <option value="BMW">BMW</option>
+                                <option value="PEUGEOT">PEUGEOT</option>
+                                <option value="MERCEDES">MERCEDES</option>
+                                <option value="SEAT">SEAT</option>
+                                <option value="NISSAN">NISSAN</option>
+                                <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
+                                <option value="SKODA">SKODA</option>
+                                <option value="FORD">FORD</option>
+
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="modelo" name="modelo" placeholder="Modelo" required><br><br>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="ano" name="ano" placeholder="Año" required><br><br>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="carroceria" name="carroceria" placeholder="Carrocería"
+                                required><br><br>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="transmision" name="transmision" placeholder="Transmisión"
+                                required><br><br>
+                        </div>
+                        <div class="col">
+                            <select id="combustible" name="combustible">
+                                <option value=" " disabled selected>Combustible</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="gasonlina">Gasolina</option>
+                            </select><br><br>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="version" name="version" placeholder="Versión" required><br><br>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="km" name="km" placeholder="Kilómetros" required><br><br>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required><br><br>
+                        </div>
+                        <div class="col">
+                            <input type="button" class="botones" value="Siguiente">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contacta_duda">
+                    <h3>¿Tienes alguna duda?</h3>
+                    <span>980 080 807</span>
+                    <h3>¡¡Llamanos!!</h3>
+                </div>
+
+
+
             </div>
-            <div class="lineas">
-                <input type="text" id="carroceria" name="carroceria" placeholder="Carrocería" required><br><br>
-                <input type="text" id="transmision" name="transmision" placeholder="Transmisión" required><br><br>
-                <select id="combustible" name="combustible">
-                    <option value=" " disabled selected>Combustible</option>
-                    <option value="diesel">Diesel</option>
-                    <option value="gasonlina">Gasolina</option>
-                </select><br><br>
-            </div>
-            <div class="lineas">
-                <input type="text" id="version" name="version" placeholder="Versión" required><br><br>
-                <input type="text" id="km" name="km" placeholder="Kilómetros" required><br><br>
-                <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required><br><br>
-            </div>
-
-            <input type="button" class="botones" value="Siguiente">
-        </form>
-
-        <div class="contacta_duda">
-            <h3>¿Tienes alguna duda?</h3>
-            <span>980 080 807</span>
-            <h3>¡¡Llamanos!!</h3>
         </div>
-
-
-
     </div>
+
 
 
 
@@ -165,7 +201,7 @@
 
         </form> -->
 
-<!-- 
+    <!-- 
         <form class="formu">
             <h4>¡Tasacción de tu coche, coge cita!</h4>
             <h3>El precio de ti vehículo es:</h3>
