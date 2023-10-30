@@ -86,14 +86,9 @@ header .imagen {
 }
 
 
-.titulo {
-    width: 100%;
-    height: 30px;
-    margin-top: 50px; 
-    margin-bottom: 50px;
-}
 
-.titulo .opiniones-titulo {
+
+.opiniones-titulo {
     text-align: center;
     font-size: x-large;
     color: var(--blanco_roto);
