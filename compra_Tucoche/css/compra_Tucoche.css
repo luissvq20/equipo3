@@ -98,9 +98,8 @@ display: flex;
 .filtro {
 
   background-color: var(--blanco_roto);
-  padding: 1.5%;
- max-height:50rem;
-border-radius: 1rem;
+  padding: 7%;
+  border-radius: 1rem;
 
 }
 
@@ -259,3 +258,36 @@ input[type]:focus {
 
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .compramos_coche {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--naranja);
+    font-size: 3.8rem;
+    margin-top: 12%;
+    margin-bottom: 2%;
+  }
+  
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .compramos_coche {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--naranja);
+    font-size: 2.5rem;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+  }
+  
+  
+}
