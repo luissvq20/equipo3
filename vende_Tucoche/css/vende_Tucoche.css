@@ -304,3 +304,73 @@ input[type]:focus {
   margin-bottom: 2%;
 
 }
+
+
+
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .compramos_coche {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--naranja);
+    margin-left: 30%;
+    font-size: 3.8rem;
+    margin-top: 12%;
+    margin-bottom: 2%;
+  }
+
+  .imagenSuperpuesta {
+    position: absolute;
+    /* O 'absolute' si prefieres posicionar relativo a un contenedor */
+    top: 9%;
+    left: 2%;
+    width: 38%;
+    /* O el ancho que desees */
+    height: 15%;
+    /* O la altura que desees */
+    z-index: 9999;
+    /* Un valor alto para asegurar que esté en la parte superior */
+  }
+  
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .compramos_coche {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--naranja);
+    font-size: 2.5rem;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    margin-left: 0%;
+  }
+
+  .imagenSuperpuesta {
+    position: absolute;
+    /* O 'absolute' si prefieres posicionar relativo a un contenedor */
+    top: 8%;
+    left: 0%;
+    width: 37%;
+    /* O el ancho que desees */
+    height: 17%;
+    /* O la altura que desees */
+    z-index: 9999;
+    /* Un valor alto para asegurar que esté en la parte superior */
+  }
+  
+  
+}
