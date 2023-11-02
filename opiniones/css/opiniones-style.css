@@ -114,15 +114,8 @@ header .imagen {
 }
 
 
-.container-opiniones-hijo .opiniones {
+.row .opiniones {
     background-color: var(--blanco_roto);
-
-    display: flex;
-    flex-direction: column;
-
-    width: 80%;
-
-    margin: auto;
     margin-top: 10px;
     margin-bottom: 40px;
     padding-left: 2%;
@@ -330,23 +323,10 @@ a {
     color: #ffffff;
 }
 
-.titulo-estadisticas{
-    display: flex;
-    margin: auto;
-    align-items: center;
-
+.row .titulo-estadisticas{
     text-align: center;
     color: var(--blanco_roto);
     text-shadow: 2px 2px var(--naranja_claro);
-    font-size: large;
-}
-
-.container-estadisticas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    margin: auto;
-
 }
 
 .highcharts-figure,

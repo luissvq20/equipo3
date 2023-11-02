@@ -22,7 +22,7 @@
             <a href="/compra_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a>
             <a href="/vende_Tucoche/html/vende_Tucoche.html">VENDE TU COCHE</a>
             <a href="/opiniones/html/opiniones.html">OPINIONES</a>
-            <a href="/sobre_nosotros/html/sobre_nosotros.html">CONTACTO</a>
+            <a href="/contacta/html/contacta.html">CONTACTO</a>
         </nav>
         <header>
             <img class="imagen" src="/opiniones/img/logoSINFONDOchica.png" alt="logo">
@@ -32,14 +32,14 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="col-xxl-12 opiniones-titulo">
+                <div class="col-xxl-12 col-12 fs-4 opiniones-titulo">
                     <h2>OPINIONES DE NUESTROS CLIENTES</h2>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row d-flex justify-content-xxl-evenly">
-                <div class="opiniones bg-light mt-xxl-4 col-xxl-5">
+            <div class="row d-flex justify-content-xxl-around justify-content-md-center">
+                <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
                     <div class="datos">
                         <div class="usuario-imagen">
                             <img src="/opiniones/img/avatar1.jpg" id="usuario-imagen">
@@ -71,7 +71,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="opiniones bg-light mt-xxl-4 col-xxl-5">
+                <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
                     <div class="datos">
                         <div class="usuario-imagen">
                             <img src="/opiniones/img/avatar 2.jpg" id="usuario-imagen">
@@ -105,7 +105,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="opiniones bg-light mt-xxl-4 col-xxl-5">
+                <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
                     <div class="datos">
                         <div class="usuario-imagen">
                             <img src="/opiniones/img/avatar 3.jpg" id="usuario-imagen">
@@ -137,7 +137,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="opiniones bg-light mt-xxl-4 col-xxl-5 rounded">
+                <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
                     <div class="datos">
                         <div class="usuario-imagen">
                             <img src="/opiniones/img/avatar 4.jpg" id="usuario-imagen">
@@ -170,29 +170,37 @@
                 </div>
             </div>
         </div>
-        <div class="titulo-estadisticas">
-            <h1>MARCAS Y CIUDADES MAS VENDIDAS</h1>
-        </div>
-        <div class="container-estadisticas">
-            <div class="estadisticas">
-                <figure class="highcharts-figure">
-                    <div id="estadisticas-charts"></div>
-                    <p class="highcharts-description">
-                    </p>
-                </figure>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-12 text-center titulo-estadisticas">
+                    <h1>MARCAS Y CIUDADES MAS VENDIDAS</h1>
+                </div>
             </div>
-            <div class="tabla-datos">
-                <figure class="highcharts-figure">
-                    <div id="circulo-estadisticas_chart"></div>
-                    <p class="highcharts-description">
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-md-center justify-content-xxl-center">
+                <div class="col-xxl-4 col-11 estadisticas ">
+                    <figure class="highcharts-figure">
+                        <div id="estadisticas-charts"></div>
+                        <p class="highcharts-description">
+                        </p>
+                    </figure>
+                </div>
+                <div class="col-xxl-4 col-11 tabla-datos">
+                    <figure class="highcharts-figure">
+                        <div id="circulo-estadisticas_chart"></div>
+                        <p class="highcharts-description">
 
-                    </p>
-                </figure>
+                        </p>
+                    </figure>
+                </div>
+
             </div>
         </div>
-        <footer id="contacto">
-            <div class="contenedor footer-content">
-                <div class="contact-us">
+
+        <footer id="container contacto">
+            <div class="row footer-content">
+                <div class="row contact-us">
                     <img src="/opiniones/img/logoSINFONDOchica.png" width="300" class="brand">
                     <p>Coches que te inspiran, precios que te sorprenden.</p>
                 </div>
