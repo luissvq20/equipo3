@@ -53,3 +53,11 @@ dropdownHeader4.addEventListener('click', function () {
         dropdownContent4.style.display = 'none';
     }
 });
+
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

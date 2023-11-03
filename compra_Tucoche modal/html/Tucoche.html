@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COCHE SELECCIONADO</title>
-    <link rel="stylesheet" href="/compra_Tucoche copy/css.css">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/BootStrap/css/bootstrap.min.css">
+    <script src="/BootStrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/compra_Tucoche modal/html/js.js"></script>
+    <script src="/compra_Tucoche modal/html/menu.js"></script>
+    <link rel="stylesheet" href="/compra_Tucoche modal/css.css">
 </head>
 
 <body>
 
-   <header class="header" id="inicio">
+    <header class="header" id="inicio">
         <img src="/menu_Principal/images/menu.svg" alt="" class="hamburger">
         <nav class="menu-navegacion">
             <a href="/vende_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a>
@@ -26,128 +31,145 @@
 
         <div class="coches_disponibles">
             <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
-            <h1 class="compramos_coche">COCHES DISPONIBLES!!</h1>
-    
         </div>
     </header>
 
-      
+
     </header>
-  
+
+
+    <div class="contenedor-galeria">
+        <div class="divimagen">
+            <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
+            <div class="texto">
+                <p class="desde">Desde 300€/mes</p>
+                <p class="precio">19.990€</p>
+                <p class="nombre">VW Arteon</p>
+                <p>2.0 TDI 190 quatt Str Attraction 2020 | 80.321km | DIESEL | Automatico</p>
+            </div>
+    </div>
+
+        <div class="infoadicional">
+
+            <h1>INFORMACION ADICIONAL</h1>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                ABRIR COCHE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="background-color:#ffffff;">
+                    <div class="modal-header" style="background-color: #ffffff;">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>VW ARTEON</strong></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <div class="divimagen">
+                                <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
+                                <div class="texto">
+                                    <p class="desde">Desde 300€/mes</p>
+                                    <p class="precio">19.990€</p>
+                                    <p class="nombre">VW Arteon</p>
+                                    <p>2.0 TDI 190 quatt Str Attraction 2020 | 80.321km | DIESEL | Automatico</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            FICHA TECNICA
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <p class="dropdown-item" href="#"><strong>Velocidad máxima 220 km/h </strong><br>
+                                    <strong>Aceleración 0-100 km/h 8,7 s</strong> <br>
+                                    <strong>Consumo NEDC:</strong><br>
+                                    Extraurbano 3,6 l/100 km <br>
+                                    Urbano 5 l/100 km <br>
+                                    Medio 4,1 l/100 km
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
         
-        <div class="contenedor-galeria">
-            <div class="divimagen">
-                <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
-                <button class="boton1">RESERVAR</button>
-                <div class="texto">
-                    <p class="desde">Desde 300€/mes</p>
-                    <p class="precio">19.990€</p>
-                    <p class="nombre">VW Arteon</p>
-                    <p>2.0 TDI 190 quatt Str Attraction 2020 | 80.321km | DIESEL | Automatico</p>
-                    
-                        
-                    
-                </div>
-            </div>
-
-            <div class="infoadicional">
-                <h1>INFORMACION ADICIONAL</h1>
-                <div class="custom-dropdown">
-                    <div class="dropdown-header" id="dropdown-header">FICHA TÉCNICA</div>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <p>Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo,
-                            código de plataforma: MQB, carrocería & puertas (local): berlina con portón de 3 puertas
-                            Estado de los datos: sin actualizar (colores y tapicerías), sin actualizar (datos leasing),
-                            actualizado (contenido opciones), actualizado (precio opciones), actualizado (precios) y
-                            sólo datos de los catálogos (especificaciones)
-                            Motor de combustión</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MULTIMEDIA
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <p class="dropdown-item" href="#">
+                                <p>
+                                    Ocho altavoces. <br>
+                                    Equipo de audio con radio FM. <br>
+                                    pantalla táctil. <br>
+                                    Control remoto de audio en el volante. <br>
+                                    Conexión para: entrada AUX delantera y USB delantero.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-                <br>
-
-                <div class="custom-dropdown1">
-                    <div class="dropdown-header1" id="dropdown-header1">MULTIMEDIA</div>
-                    <div class="dropdown-content1" id="dropdown-content1">
-                        <p>Ocho altavoces
-                            Equipo de audio con radio FM, RDS y cargador para 1 CD con lector de CD para MP3, Tarjeta
-                            digital y pantalla táctil pantalla color
-                            Control remoto de audio en el volante
-                            Cargador de CD (para 1 ud) en la guantera
-                            Conexión para: entrada AUX delantera y USB delantero</p>
+        
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            SEGURIDAD
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <p class="dropdown-item" href="#">
+                                <p>
+                                    Airbag lateral de cortina delantero y trasero.<br>
+                                    Airbag frontal del conductor, airbag frontal del acompañante desconectable.<br>
+                                    Airbags laterales delanteros. <br>
+                                    Preparación Isofix. <br>
+                                    Airbag de rodilla para el conductor.</p>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-                <br>
-
-                <div class="custom-dropdown2">
-                    <div class="dropdown-header2" id="dropdown-header2">SEGURIDAD</div>
-                    <div class="dropdown-content2" id="dropdown-content2">
-                        <p> Airbag lateral de cortina delantero y trasero
-                            Airbag frontal del conductor, airbag frontal del acompañante desconectable
-                            Airbags laterales delanteros
-                            Dos reposacabezas en asientos delanteros ajustables en altura, tres reposacabezas en asientos traseros ajustables en altura
-                            Cinturón de seguridad delantero en asiento conductor, acompañante y ajustable en altura con pretensores
-                            Cinturón de seguridad trasero en lado conductor, cinturón de seguridad trasero en lado acompañante, cinturón de seguridad trasero en asiento central de 3 puntos
-                            Preparación Isofix
-                            Airbag de rodilla para el conductor</p>
+        
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            INTERIOR
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <p>
+                                    <strong>Acabados de lujo: </strong><br>
+                                    pomo de la palanca de cambios en aluminio y cuero. <br>
+                                    consola central en negro piano. <br>
+                                    Puertas en símil fibra carbono. <br>
+                                    Tablero en simil fibra de carbono.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-                </div>
 
-                <br>
-
-                <div class="custom-dropdown3">
-                    <div class="dropdown-header3" id="dropdown-header3">INTERIOR</div>
-                    <div class="dropdown-content3" id="dropdown-content3">
-                        <p>Acabados de lujo: pomo de la palanca de cambios en aluminio y cuero, consola central en negro piano, puertas en símil fibra carbono y tablero en simil fibra de carbono
-                            Alfombrillas</p>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                      <button type="button" class="btn btn-primary">GUARDAR CAMBIOS</button>
                     </div>
+                  </div>
                 </div>
-
-                <br>
-
-                <div class="custom-dropdown4">
-                    <div class="dropdown-header4" id="dropdown-header4">EXTERIOR</div>
-                    <div class="dropdown-content4" id="dropdown-content4">
-                        <p>Alerón en el techo/parte superior del portón
-                            Faldones laterales</p>
-                    </div>
-                </div>
-                <br><br><br><br>
-                <div class="divboton">
-                    <button class="boton">RESERVAR</button>
-                </div>
-                
-            </div>
+              </div>
+            
         </div>
+    </div>
 
 
     <section class="imagen-light">
         <img src="/menu_Principal/images/close.svg" alt="" class="close">
         <img src="/menu_Principal/images/exposicion.jpg" alt="" class="agregar-imagen">
     </section>
-    </section>
 
 
 
-
-    <!-- <footer id="contacto">
-        <div class="contenedor footer-content">
-            <div class="contact-us">
-                <h2 class="brand">KAR MC'QUEEN</h2>
-                <p>Coches que te inspiran, precios que te sorprenden.</p> 
-            </div>
-            <div class="social-media">
-                <a href="https://www.instagram.com/bestcaption_mph/" class="social-media-icon">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="line"></div>
-    </footer> -->
-    <script src="/compra_Tucoche copy/html/js.js"></script>
-    <script src="/compra_Tucoche copy/html/menu.js"></script>
 </body>
 
 </html>
