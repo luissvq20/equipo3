@@ -1,0 +1,73 @@
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    /* OCULTA LOS ELEMENTOS */
+    margin: auto;
+    /* LO CENTRA TODO */
+    padding: 60px 0;
+    /* PADDING 60PX ARRIBA Y ABAJO Y 0 PX A LOS LADOS - ESPACIADO ENTRE LOS ELEMENTOS - */
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+
+.contact-us {
+    color: white;
+    width: 40%;
+}
+
+.brand {
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--naranja);
+}
+
+.brand+p {
+    font-weight: 500;
+}
+
+.social-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    /* PARA QUE LO PONGA AL FINAL DE CONTENEDOR */
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.social-media-icon:hover {
+    background: white;
+    color: #ff5500;
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+    /* CENTRAR VERTICALMENTE */
+}
+
+.line {
+    max-width: 1200px;
+    height: 2px;
+    background: white;
+    margin-bottom: 60px;
+}
