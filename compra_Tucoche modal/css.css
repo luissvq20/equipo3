@@ -170,7 +170,7 @@ p, h1, h2{
 
   .precio{
    color: #ff5500;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 
@@ -197,10 +197,7 @@ p, h1, h2{
     align-items: center;
   }
   .logo {
-    position: absolute;
-    /* O 'absolute' si prefieres posicionar relativo a un contenedor */
-    z-index: 9999;
-    /* Un valor alto para asegurar que esté en la parte superior */
+    
     top: 3%;
     width: auto;
     height: 3rem;
@@ -467,3 +464,6 @@ p, h1, h2{
     text-decoration: none;
 }
 
+.imagen-modal{
+    width: 300px;
+}
