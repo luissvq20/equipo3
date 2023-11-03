@@ -1,0 +1,23 @@
+{
+    "coches" : [
+        {
+            "nombre": "VW Arteon",
+            "precio":11000,
+            "imagen_coche": "cochearteon.jpg",
+            "desde_precio": "Desde 300€/mes",
+            "descripcion_1": "2.0 TDI 190 quatt Str Attraction",
+            "descripcion_2": "2020 | 80.321km | DIESEL | Automatico"
+
+        },
+        {
+            "nombre": "VW Arteon",
+            "precio":30000,
+            "imagen_coche": "",
+            "desde_precio": "Desde 300€/mes",
+            "descripcion_1": "2.0 TDI 190 quatt Str Attraction",
+            "descripcion_2": "2020 | 80.321km | DIESEL | Automatico"
+
+        }
+
+    ]
+}
