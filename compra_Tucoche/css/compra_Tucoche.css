@@ -26,49 +26,7 @@ body {
   align-items: center;
 }
 
-.hamburger {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  background: rgb(0, 0, 0);
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  /* Cada vez que pasas el RATON POR ENCIMA aparece la MANITA */
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 
-}
-
-.menu-navegacion {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 30vw;
-  /* VIEW PER WIDTH 30% DE ANCHO DE LA PAGINA */
-  height: 100%;
-  background-image: linear-gradient(to right, var(--azul_oscuro) 0%, var(--azul_oscuro) 100%);
-  display: flex;
-  flex-direction: column;
-  /* PARA QUE SE PONGAN UNO ENCIMA DE OTRO */
-  justify-content: space-evenly;
-  /* REPARTE ESPACIO EQUITATIVAMENTE VERTICALMENTE */
-  align-items: center;
-  transition: transform .3s ease-in-out;
-  transform: translate(110%);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  font-family: 'Montserrat', sans-serif;
-
-}
-
-.spread {
-  transform: translate(0);
-}
-
-.menu-navegacion a {
-  color: #fff;
-  text-decoration: none;
-}
 
 .logo {
   position: absolute;
@@ -90,15 +48,12 @@ body {
   margin-bottom: 2%;
 }
 
-.filtro_coches {
-display: flex;
 
-}
 
 .filtro {
 
   background-color: var(--blanco_roto);
-  padding: 7%;
+  padding: 10%;
   border-radius: 1rem;
 
 }
@@ -163,7 +118,9 @@ textarea {
   max-height: 5rem;
   margin-bottom: 0%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  border-color: var(--naranja);
+  border-radius: 0.5rem;
+  background-color: #f7efee;
 }
 
 .botones {
@@ -177,7 +134,8 @@ textarea {
   color: var(--blanco_roto);
   background-color: var(--naranja);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border-radius: 0px 25px 0px 25px
+  border-radius: 0px 25px 0px 25px;
+  cursor: pointer;  
 
 }
 
@@ -187,14 +145,27 @@ textarea {
 
 }
 
-input,
-select,
-label,
-textarea {
-  border-color: var(--naranja);
-  border-radius: 0.5rem;
-  background-color: #f7efee;
+.boton-filtar {
+  margin: 0%;
+  min-width: 15rem;
+  max-width: 20rem;
+  min-height: 3rem;
+  max-height: 7rem;
+  margin-top: 1%;
+  color: var(--blanco_roto);
+  background-color: var(--naranja);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;  
+
 }
+
+.boton-filtar:hover {
+  box-shadow: 1px 2px 2px rgba(229, 103, 23, 0.075)inset, 0 0 15px rgba(255, 102, 0, 0.6);
+
+
+}
+
+
 
 textarea:focus,
 select:focus,
@@ -210,9 +181,6 @@ input[type]:focus {
   width: 100%;
   border-radius: 20px;
   margin-top: 0%;
-  margin: 0 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .img-galeria{
@@ -268,6 +236,52 @@ input[type]:focus {
     margin-top: 12%;
     margin-bottom: 2%;
   }
+
+  .filtro h3 {
+    color: var(--naranja);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+  
+  
+  }
+
+  label,
+input,
+select,
+textarea {
+  margin-right: 2%;
+  margin: 3%;
+  width: 48%;
+  min-width: 9rem;
+  max-width: 30rem;
+  min-height: 3rem;
+  max-height: 5rem;
+  margin-bottom: 0%;
+  font-size: 70%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: var(--naranja);
+  border-radius: 0.5rem;
+  background-color: #f7efee;
+}
+.boton-filtar {
+  margin: 0%;
+  min-width: 9rem;
+  max-width: 10rem;
+  min-height: 3rem;
+  max-height: 7rem;
+  margin-top: 1%;
+  color: var(--blanco_roto);
+  background-color: var(--naranja);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;  
+
+}
+
+
   
 }
 
@@ -278,6 +292,8 @@ input[type]:focus {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+ 
   
   .compramos_coche {
     font-family: 'Montserrat', sans-serif;
@@ -288,6 +304,51 @@ input[type]:focus {
     margin-bottom: 2%;
     margin-left: 0%;
   }
+
+  .filtro h3 {
+    color: var(--naranja);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+  
+  
+  }
+
+  label,
+input,
+select,
+textarea {
+  margin-right: 2%;
+  margin: 3%;
+  width: 48%;
+  min-width: 6rem;
+  max-width: 30rem;
+  min-height: 3rem;
+  max-height: 5rem;
+  margin-bottom: 0%;
+  font-size: 70%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: var(--naranja);
+  border-radius: 0.5rem;
+  background-color: #f7efee;
+}
+
+.boton-filtar {
+  margin: 0%;
+  min-width: 6rem;
+  max-width: 10rem;
+  min-height: 3rem;
+  max-height: 7rem;
+  margin-top: 1%;
+  color: var(--blanco_roto);
+  background-color: var(--naranja);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;  
+
+}
   
   
 }
