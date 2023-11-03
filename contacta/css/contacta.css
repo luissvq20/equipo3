@@ -4,16 +4,17 @@
     --azul_oscuro: #17191D;
     --naranja_claro: #FE8A78;
 }
-.fondo_2{
+body {
     background-color: var(--azul_oscuro);
+}
+.fondo_2{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 45px;
     justify-content: flex-start;
-    width:  100%; 
-    
+    width:  100%;  
 }
 .orden{
     display: flex;
@@ -21,53 +22,55 @@
 }
 .fondo {
     background-color: var(--blanco_roto);
+    justify-content: flex-start;
+    margin-right: auto;
 }
-.contacta{
-    margin: 20px;
+.contacta_localizacion{
+    margin-right: 20px;
+    background-color: var(--blanco_roto);
 }
-.contacta1{
+.contacta_formulario{
+    margin-left: 0px;
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--blanco_roto);
 }
-.contacta1 textarea{
+.contacta_formulario textarea{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 18px;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
     border-color: var(--naranja);
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 102, 0, 0.6);
-    border-radius: 10px;
+    border-radius: 10px;  
 }
-.contacta1 input[type="number"]{
+.contacta_formulario input[type="number"]{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 10px;
     margin: 18px;
     border-color: var(--naranja);
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 102, 0, 0.6);
     border-radius: 10px;
+    width: 50%;
+    height: 2rem;
 }
-.contacta1 input[type="text"]{
+.contacta_formulario input[type="text"]{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 10px;
     margin: 18px;
     border-color: var(--naranja);
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 102, 0, 0.6);
     border-radius: 10px;
+    width: 50%;
+    height: 2rem;
 }
 .placeholder{
     font-size: 3px;
 }
-.letra{
+.letra_h2{
     color: white;
     font-family: 'Franklin Gothic Medium';
-}
-.imagen {
-    width:550px;
-    height: 343px;
-}
-.imagen2{
-    width: 590px;
-    height: 8px;
+    font-size: 23px;
 }
 .imagen3{
     position: absolute;
@@ -94,7 +97,23 @@
     border-radius: 10px;
 }
 .texto{
-    font-size: 25px;
+    font-size: 20px;
+}
+header {
+    background-color: var(--azul_oscuro);
+    background-size: cover;
+    margin: 0%;
+    background-color: var(--azul_oscuro);
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+}
+header .imagen {
+    padding: 10px;
+    margin: auto;
+    width: fit-content;
+    width: 25%;
 }
 .hamburger{
     position: fixed;
@@ -107,7 +126,6 @@
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
-
 .menu-navegacion{
     position: fixed;
     top: 0;
@@ -123,12 +141,17 @@
     transform: translate(110%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
-
 .spread{
     transform: translate(0);
 }
-
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
+}
+.linea_naranja {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5px;
+    background-color: var(--naranja_claro);
 }
