@@ -66,8 +66,6 @@
 }
 
 .line {
-    max-width: 1200px;
     height: 2px;
-    background: white;
-    margin-bottom: 60px;
+    background: white; 
 }
