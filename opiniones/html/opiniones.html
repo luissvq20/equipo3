@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-utilities.min.css">
+
+    <script src="/opiniones/js/json_print.js"></script>
+
 
     <link rel="stylesheet" href="/opiniones/css/opiniones-style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-utilities.min.css">
+
     <link rel="stylesheet" href="/header/header.css">
     <link rel="stylesheet" href="/menu_Navegacion/menu_Navegacion.css">
     <link rel="stylesheet" href="/footer/footer.css">
@@ -46,134 +51,37 @@
         </div>
     </div>
     <div class="container">
-        <div class="row d-flex justify-content-xxl-around justify-content-md-center">
-            <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
-                <div class="datos">
-                    <div class="usuario-imagen">
-                        <img src="/opiniones/img/avatar1.jpg" id="usuario-imagen">
-                    </div>
-                    <div class="comentario">
-                        <p> <strong>CARLA SOFIA M.</strong> | Sevilla | Skoda Fabia, 2009</p>
-                    </div>
-                    <div class="imagen-like">
-                        <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
-                    </div>
-                </div>
-                <div class="ec-stars-wrapper">
-                    <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-                    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-                    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-                    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-                    <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-                </div>
-                <div class="text">
-                    <p>Excelente atención, rapidez y agilidad en todos los trámites. Recomendada 100% para la compra
-                        de
-                        coches </p>
-                </div>
-                <div class="fecha-comentario">
-                    <p>
-                        Escrita el 19 de octubre de 2023<br>
-                        Esta es la opinión subjetiva de un miembro de Tripadvisor, no de Tripadvisor LLC.
-                        Tripadvisor realiza comprobaciones de las opiniones.
-                    </p>
-                </div>
-            </div>
-            <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
-                <div class="datos">
-                    <div class="usuario-imagen">
-                        <img src="/opiniones/img/avatar 2.jpg" id="usuario-imagen">
-                    </div>
-                    <div class="comentario">
-                        <p> <strong>ANITA ANGELA C.</strong> | Sevilla | Citroen C4 Cactus, 2017</p>
-                    </div>
-                    <div class="imagen-like">
-                        <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
-                    </div>
-                </div>
-                <div class="ec-stars-wrapper">
-                    <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-                    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-                    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-                    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-                    <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-                </div>
-                <div class="text">
-                    <p>Un servicio excepcional me han atendido en la sucursal de baricentro y estoy muy satisfecho
-                        de
-                        vuestros servicios , la tasación fue la misma que me dieron en la web , lo recomiendo 100%.
-                    </p>
-                </div>
+        <div class="row d-flex justify-content-xxl-around justify-content-md-center" id="opiniones">
 
-                <div class="fecha-comentario">
-                    <p>
-                        Escrita el 10 de octubre de 2021<br>
-                        Esta es la opinión subjetiva de un miembro de Tripadvisor, no de Tripadvisor LLC.
-                        Tripadvisor realiza comprobaciones de las opiniones.
-                    </p>
-                </div>
-            </div>
-            <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
-                <div class="datos">
-                    <div class="usuario-imagen">
-                        <img src="/opiniones/img/avatar 3.jpg" id="usuario-imagen">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="comentario">
-                        <p> <strong>Pedro C.</strong> | Sevilla | Renault Laguna, 2012 </p>
-                    </div>
-                    <div class="imagen-like">
-                        <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
-                    </div>
-                </div>
-                <div class="ec-stars-wrapper">
-                    <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-                    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-                    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-                    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-                    <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-                </div>
-                <div class="text">
-                    <p>Fue rápido la tasación del coche, y el ingreso en 24h la baja del vehículo se hizo en 2 dias,
-                        son
-                        unos profesionales agradables en el trato lo recomiendo 100%</p>
-                </div>
-                <div class="fecha-comentario">
-                    <p>
-                        Escrita el 26 de octubre de 2022<br>
-                        Esta es la opinión subjetiva de un miembro de Tripadvisor, no de Tripadvisor LLC.
-                        Tripadvisor realiza comprobaciones de las opiniones.
-                    </p>
-                </div>
-            </div>
-            <div class="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11">
-                <div class="datos">
-                    <div class="usuario-imagen">
-                        <img src="/opiniones/img/avatar 4.jpg" id="usuario-imagen">
-                    </div>
-                    <div class="comentario">
-                        <p> <strong>Manuel A.</strong> | Madrid | Renault clio, 2017 </p>
-                    </div>
-                    <div class="imagen-like">
-                        <button><img src="/opiniones/img/me-gusta.png" id="like"></button>
-                    </div>
-                </div>
-                <div class="ec-stars-wrapper">
-                    <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-                    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-                    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-                    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-                    <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-                </div>
-                <div class="text">
-                    <p>El personal que está situado en la avenida del maresme. Encantadores ,amables y profesionales
-                    </p>
-                </div>
-                <div class="fecha-comentario">
-                    <p>
-                        Escrita el 04 de octubre de 2023<br>
-                        Esta es la opinión subjetiva de un miembro de Tripadvisor, no de Tripadvisor LLC.
-                        Tripadvisor realiza comprobaciones de las opiniones.
-                    </p>
                 </div>
             </div>
         </div>
@@ -221,7 +129,7 @@
                             </a>
                         </div>
                     </div>
-            
+
                     <div class="line"></div>
                 </footer>
             </div>

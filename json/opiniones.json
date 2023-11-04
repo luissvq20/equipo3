@@ -1,0 +1,32 @@
+{
+    "opiniones": [
+        {
+            "usuarioImagen" : "/opiniones/img/avatar1.jpg",
+            "usuarioNombre" : "CARLA SOFIA M. ",
+            "usuarioDatos": "| Sevilla | Skoda Fabia, 2009",
+            "comentario": "Excelente atención, rapidez y agilidad en todos los trámites. Recomendada 100% para la compra de coches",
+            "fechaComentario": "Escrita el 19 de octubre de 2023"
+        },
+        {
+            "usuarioImagen" : "/opiniones/img/avatar2.jpg",
+            "usuarioNombre" : "ANITA ANGELA C. ",
+            "usuarioDatos": "| Sevilla | Citroen C4 Cactus, 2017",
+            "comentario": "Un servicio excepcional me han atendido en la sucursal de baricentro y estoy muy satisfecho de vuestros servicios , la tasación fue la misma que me dieron en la web , lo recomiendo 100%.",
+            "fechaComentario": "Escrita el 10 de octubre de 2021"
+        },
+        {
+            "usuarioImagen" : "/opiniones/img/avatar3.jpg",
+            "usuarioNombre" : "Pedro C. ",
+            "usuarioDatos": "| Sevilla | Renault Laguna, 2012",
+            "comentario": "Fue rápido la tasación del coche, y el ingreso en 24h la baja del vehículo se hizo en 2 dias, son unos profesionales agradables en el trato lo recomiendo 100%",
+            "fechaComentario": "Escrita el 26 de octubre de 2022"
+        },
+        {
+            "usuarioImagen" : "/opiniones/img/avatar4.jpg",
+            "usuarioNombre" : "Manuel A. ",
+            "usuarioDatos": "| Madrid | Renault clio, 2017",
+            "comentario": "El personal que está situado en la avenida del maresme. Encantadores ,amables y profesionales",
+            "fechaComentario": "Escrita el 04 de octubre de 2023"
+        }
+    ]
+}
