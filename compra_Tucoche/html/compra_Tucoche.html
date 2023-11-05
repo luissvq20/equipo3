@@ -41,7 +41,7 @@
                         <form class="formu1">
             
                             <select id="marca" name="marca" required>
-                                <option value=" " disabled selected>Marca</option>
+                                <option value="" disabled selected>Marca</option>
                                 <option value="AUDI">AUDI</option>
                                 <option value="BMW">BMW</option>
                                 <option value="PEUGEOT">PEUGEOT</option>
@@ -55,7 +55,7 @@
                             </select><br><br>
             
                             <select id="modelo" name="modelo" required>
-                                <option value=" " disabled selected>Modelo</option>
+                                <option value="" disabled selected>Modelo</option>
                                 <option value="AUDI">AUDI</option>
                                 <option value="BMW">BMW</option>
                                 <option value="PEUGEOT">PEUGEOT</option>
@@ -69,7 +69,7 @@
                             </select><br><br>
             
                             <select id="precio" name="precio" required>
-                                <option value=" " disabled selected>Precio</option>
+                                <option value="" disabled selected>Precio</option>
                                 <option value="AUDI">AUDI</option>
                                 <option value="BMW">BMW</option>
                                 <option value="PEUGEOT">PEUGEOT</option>
@@ -82,49 +82,46 @@
             
                             </select><br><br>
                             <select id="ano" name="ano" required>
-                                <option value=" " disabled selected>Año</option>
-                                <option value="AUDI">AUDI</option>
-                                <option value="BMW">BMW</option>
-                                <option value="PEUGEOT">PEUGEOT</option>
-                                <option value="MERCEDES">MERCEDES</option>
-                                <option value="SEAT">SEAT</option>
-                                <option value="NISSAN">NISSAN</option>
-                                <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
-                                <option value="SKODA">SKODA</option>
-                                <option value="FORD">FORD</option>
+                                <option value="" disabled selected>Año</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
             
                             </select><br><br>
             
                             <select id="combustible" name="combustible">
-                                <option value=" " disabled selected>Combustible</option>
+                                <option value="" disabled selected>Combustible</option>
                                 <option value="diesel">Diesel</option>
                                 <option value="gasonlina">Gasolina</option>
                             </select><br><br>
             
                             <select id="caja_cambios" name="caja_cambios">
-                                <option value=" " disabled selected>Caja de cambios</option>
+                                <option value="" disabled selected>Caja de cambios</option>
                                 <option value="diesel">Diesel</option>
                                 <option value="gasonlina">Gasolina</option>
                             </select><br><br>
             
                             <select id="plazas" name="plazas">
-                                <option value=" " disabled selected>NºPlazas</option>
+                                <option value="" disabled selected>NºPlazas</option>
                                 <option value="diesel">Diesel</option>
                                 <option value="gasonlina">Gasolina</option>
                             </select><br><br>
             
                             <select id="carroceria" name="carroceria">
-                                <option value=" " disabled selected>Carroceria</option>
+                                <option value="" disabled selected>Carroceria</option>
                                 <option value="diesel">Diesel</option>
                                 <option value="gasonlina">Gasolina</option>
                             </select><br><br>
             
                             <select id="cuota" name="cuota">
-                                <option value=" " disabled selected>Cuota/mes</option>
+                                <option value="" disabled selected>Cuota/mes</option>
                                 <option value="diesel">Diesel</option>
                                 <option value="gasonlina">Gasolina</option>
                             </select><br><br>
-                            <input type="button" class="boton-filtar" value="Filtrar">
+                            <input type="button" onclick="filtro()" class="boton-filtar"  value="Filtrar">
 
             
                         </form>

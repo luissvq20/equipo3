@@ -1,32 +1,34 @@
 document.addEventListener("DOMContentLoaded", init);
-
+var coches_json;
 function init() {
     fetch('/json/coches.json')
         .then((response) => response.json())
         .then((data) => {
-           var dataset = data.coches;
+            var dataset = data.coches;
+            coches_json = data.coches;
             mostrarCoches(dataset);
         });
 }
+
 function mostrarCoches(datos) {
     var contenedor_coches = document.getElementById("coches");
-    
+
     datos.forEach((coche, index) => {
         var div_coche = document.createElement("div");
-        div_coche.className="col"
-        div_coche.id="coche_"+index;
-        div_coche.innerHTML=`
+        div_coche.className = "col"
+        div_coche.id = "coche_" + index;
+        div_coche.innerHTML = `
            
             <div class="divimagen" >
                 <div>
-                    <img src="/menu_Principal/images/2.jpg" id="imagen_coche" alt="" class="img-galeria">
+                    <img src="/images/${coche.imagen_coche}" id="imagen_coche" alt="" class="img-galeria">
                 </div>
                 <div class="texto">
                     <p class="desde" id="desde_precio">${coche.desde_precio}</p>
-                    <p class="precio" id="precio">${coche.precio}</p>
-                    <p class="nombre" id="nombre">VW Arteon</p>
-                    <p id="descripcion_1">2.0 TDI 190 quatt Str Attraction</p>
-                    <p id="descripcion_2">2020 | 80.321km | DIESEL | Automatico</p>
+                    <p class="precio" id="precio">${coche.precio}€</p>
+                    <p class="nombre" id="nombre">${coche.nombre}</p>
+                    <p id="descripcion_1">${coche.descripcion_1}</p>
+                    <p id="descripcion_2">${coche.descripcion_2}</p>
                 </div>
                 <input type="button" class="botones" value="Ver info">
 
@@ -37,64 +39,42 @@ function mostrarCoches(datos) {
 
 }
 
-function filtrar(event) {
-    var lista = document.getElementById("personas");
-    var opcion = event.target.value;
-    if (opcion === "todos") {
-        lista.innerHTML = " ";
-        mostrarPersonas();
+function filtro() {
+    var marca_seleccionada = document.getElementById("marca").value;
+    var ano_seleccionada = document.getElementById("ano").value;
 
-    } else if (opcion === "ninos") {
-        lista.innerHTML = " ";
-        dataset.forEach(element => {
-            if (element.edad > 0 && element.edad < 18) {
-                var li = document.createElement("li");
-                li.textContent = element.nombre + " (" + element.edad + ") " + element.descripcion;
-                lista.appendChild(li);
-            }
-
-
-        }
-        )
-
-    } else if (opcion === "jovenes") {
-        lista.innerHTML = " ";
-        dataset.forEach(element => {
-            if (element.edad >= 18 && element.edad < 25) {
-                var li = document.createElement("li");
-                li.textContent = element.nombre + " (" + element.edad + ") " + element.descripcion;
-                lista.appendChild(li);
-            }
-
-
-        }
-        )
-
-    } else if (opcion === "adultos") {
-        lista.innerHTML = " ";
-        dataset.forEach(element => {
-            if (element.edad >= 25 && element.edad < 75) {
-                var li = document.createElement("li");
-                li.textContent = element.nombre + " (" + element.edad + ") " + element.descripcion;
-                lista.appendChild(li);
-            }
-
-
-        }
-        )
-
-    } else if (opcion === "ancianos") {
-        lista.innerHTML = " ";
-        dataset.forEach(element => {
-            if (element.edad >= 75) {
-                var li = document.createElement("li");
-                li.textContent = element.nombre + " (" + element.edad + ") " + element.descripcion;
-                lista.appendChild(li);
-            }
-
-
-        }
-        )
-
+    if(marca_seleccionada){
+        coches_json=coches_json.filter(coches=>coches.marca==marca_seleccionada);
     }
+
+    if(ano_seleccionada){
+        coches_json=coches_json.filter(c=>c.ano==ano_seleccionada);
+    }
+
+    var contenedor_coches = document.getElementById("coches");
+    contenedor_coches.innerHTML=" ";
+
+    coches_json.forEach((coche, index) => {
+        var div_coche = document.createElement("div");
+        div_coche.className = "col"
+        div_coche.id = "coche_" + index;
+        div_coche.innerHTML = `
+           
+            <div class="divimagen" >
+                <div>
+                    <img src="/images/${coche.imagen_coche}" id="imagen_coche" alt="" class="img-galeria">
+                </div>
+                <div class="texto">
+                <p class="desde" id="desde_precio">${coche.desde_precio}</p>
+                <p class="precio" id="precio">${coche.precio}€</p>
+                <p class="nombre" id="nombre">${coche.nombre}</p>
+                <p id="descripcion_1">${coche.descripcion_1}</p>
+                <p id="descripcion_2">${coche.descripcion_2}</p>
+                </div>
+                <input type="button" class="botones" value="Ver info">
+
+            </div>
+        `;
+        contenedor_coches.appendChild(div_coche)
+    })
 }

@@ -2,21 +2,65 @@
     "coches" : [
         {
             "nombre": "VW Arteon",
+            "marca": "VOLSKSWAGEN",
             "precio":11000,
             "imagen_coche": "cochearteon.jpg",
+            "ano":2020,
             "desde_precio": "Desde 300€/mes",
             "descripcion_1": "2.0 TDI 190 quatt Str Attraction",
             "descripcion_2": "2020 | 80.321km | DIESEL | Automatico"
 
         },
         {
-            "nombre": "VW Arteon",
+            "nombre": "audi",
+            "marca": "VOLSKSWAGEN",
             "precio":30000,
-            "imagen_coche": "",
+            "imagen_coche": "imagengolf.jpeg",
+            "ano":2021,
             "desde_precio": "Desde 300€/mes",
             "descripcion_1": "2.0 TDI 190 quatt Str Attraction",
             "descripcion_2": "2020 | 80.321km | DIESEL | Automatico"
 
+        },
+        {
+            "nombre": "Mercedes-Benz Clase C",
+            "marca": "Mercedes",
+            "precio": 15000,
+            "imagen_coche": "cochemercedes.jpg",
+            "ano": 2019,
+            "desde_precio": "Desde 350€/mes",
+            "descripcion_1": "C 200 d 4Matic AMG Line",
+            "descripcion_2": "2019 | 60.123km | DIESEL | Automático"
+        },
+        {
+            "nombre": "Alfa Romeo Giulia",
+            "marca": "Alfa Romeo",
+            "precio": 18000,
+            "imagen_coche": "cochealfaromeo.jpg",
+            "ano": 2018,
+            "desde_precio": "Desde 400€/mes",
+            "descripcion_1": "2.0 Turbo Quadrifoglio",
+            "descripcion_2": "2018 | 50.567km | GASOLINA | Automático"
+        },
+        {
+            "nombre": "Skoda Octavia",
+            "marca": "Skoda",
+            "precio": 12000,
+            "imagen_coche": "cocheskoda.jpg",
+            "ano": 2020,
+            "desde_precio": "Desde 280€/mes",
+            "descripcion_1": "1.6 TDI Style",
+            "descripcion_2": "2020 | 70.234km | DIESEL | Manual"
+        },
+        {
+            "nombre": "BMW Serie 3",
+            "marca": "BMW",
+            "precio": 22000,
+            "imagen_coche": "cochebmv.jpg",
+            "ano": 2021,
+            "desde_precio": "Desde 500€/mes",
+            "descripcion_1": "320i xDrive M Sport",
+            "descripcion_2": "2021 | 40.789km | GASOLINA | Automático"
         }
 
     ]
