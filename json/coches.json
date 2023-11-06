@@ -24,7 +24,7 @@
         },
         {
             "nombre": "Mercedes-Benz Clase C",
-            "marca": "Mercedes",
+            "marca": "MERCEDES",
             "precio": 15000,
             "imagen_coche": "cochemercedes.jpg",
             "ano": 2019,
@@ -34,7 +34,7 @@
         },
         {
             "nombre": "Alfa Romeo Giulia",
-            "marca": "Alfa Romeo",
+            "marca": "ALFA_ROMEO",
             "precio": 18000,
             "imagen_coche": "cochealfaromeo.jpg",
             "ano": 2018,
@@ -44,7 +44,7 @@
         },
         {
             "nombre": "Skoda Octavia",
-            "marca": "Skoda",
+            "marca": "SKODA",
             "precio": 12000,
             "imagen_coche": "cocheskoda.jpg",
             "ano": 2020,
