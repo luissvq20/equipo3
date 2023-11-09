@@ -125,11 +125,11 @@ body {
     margin-bottom: 1%;
 }
 
-.img-galeria:hover {
-    opacity: 0.7;
-    /* Cambia la opacidad al pasar el ratón por encima */
-    transition: opacity 0.5s;
-    /* Agrega una transición suave para el efecto */
+.opiniones-estadisticas {
+    text-align: center;
+    font-size: x-large;
+    color: var(--blanco_roto);
+    text-shadow: 2px 2px var(--naranja_claro);
 }
 
 
