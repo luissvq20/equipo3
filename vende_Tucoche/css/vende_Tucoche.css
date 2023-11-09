@@ -281,6 +281,12 @@ input[type]:focus {
   padding: 60px 0;
   /* PADDING 60PX ARRIBA Y ABAJO Y 0 PX A LOS LADOS - ESPACIADO ENTRE LOS ELEMENTOS - */
 
+
+}
+
+.bg-foot{
+  background-color: var(--blanco_roto);
+  z-index: 9999;
 }
 
 .footer-content {
