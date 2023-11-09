@@ -6,6 +6,8 @@
             "precio":11000,
             "imagen_coche": "cochearteon.jpg",
             "ano":2020,
+            "plazas":5,
+            "combustible": "diesel",
             "desde_precio": "Desde 300€/mes",
             "descripcion_1": "2.0 TDI 190 quatt Str Attraction",
             "descripcion_2": "2020 | 80.321km | DIESEL | Automatico"
@@ -17,6 +19,8 @@
             "precio":30000,
             "imagen_coche": "imagengolf.jpeg",
             "ano":2021,
+            "plazas":4,
+            "combustible": "diesel",
             "desde_precio": "Desde 300€/mes",
             "descripcion_1": "2.0 TDI 190 quatt Str Attraction",
             "descripcion_2": "2020 | 80.321km | DIESEL | Automatico"
@@ -28,6 +32,8 @@
             "precio": 15000,
             "imagen_coche": "cochemercedes.jpg",
             "ano": 2019,
+            "plazas":5,
+            "combustible": "diesel",
             "desde_precio": "Desde 350€/mes",
             "descripcion_1": "C 200 d 4Matic AMG Line",
             "descripcion_2": "2019 | 60.123km | DIESEL | Automático"
@@ -38,6 +44,8 @@
             "precio": 18000,
             "imagen_coche": "cochealfaromeo.jpg",
             "ano": 2018,
+            "plazas":5,
+            "combustible": "gasolina",
             "desde_precio": "Desde 400€/mes",
             "descripcion_1": "2.0 Turbo Quadrifoglio",
             "descripcion_2": "2018 | 50.567km | GASOLINA | Automático"
@@ -48,6 +56,8 @@
             "precio": 12000,
             "imagen_coche": "cocheskoda.jpg",
             "ano": 2020,
+            "plazas":5,
+            "combustible": "diesel",
             "desde_precio": "Desde 280€/mes",
             "descripcion_1": "1.6 TDI Style",
             "descripcion_2": "2020 | 70.234km | DIESEL | Manual"
@@ -58,6 +68,8 @@
             "precio": 22000,
             "imagen_coche": "cochebmv.jpg",
             "ano": 2021,
+            "plazas":5,
+            "combustible": "gasolina",
             "desde_precio": "Desde 500€/mes",
             "descripcion_1": "320i xDrive M Sport",
             "descripcion_2": "2021 | 40.789km | GASOLINA | Automático"

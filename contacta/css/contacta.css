@@ -6,13 +6,13 @@
 }
 body {
     background-color: var(--azul_oscuro);
+    margin: auto;
 }
 .fondo_2{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 45px;
     justify-content: flex-start;
     width:  100%;  
 }
@@ -26,11 +26,11 @@ body {
     margin-right: auto;
 }
 .contacta_localizacion{
-    margin-right: 20px;
     background-color: var(--blanco_roto);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 .contacta_formulario{
-    margin-left: 0px;
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: var(--blanco_roto);
@@ -40,28 +40,29 @@ body {
     margin: 18px;
     font-size: 15px;
     font-weight: bold;
-    border-color: var(--naranja);
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 102, 0, 0.6);
-    border-radius: 10px;  
-}
-.contacta_formulario input[type="number"]{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10px;
-    margin: 18px;
-    border-color: var(--naranja);
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 102, 0, 0.6);
     border-radius: 10px;
-    width: 50%;
-    height: 2rem;
+    border: solid 2px var(--naranja);
 }
 .contacta_formulario input[type="text"]{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
+    margin: 18px;
+    font-weight: bold;
+    border-color: var(--naranja);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 102, 0, 0.6);
+    border-radius: 10px;
+    width: 91.5%;
+    height: 2rem;
+}
+.contacta_formulario input[type="tel"]{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
     margin: 18px;
     border-color: var(--naranja);
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 102, 0, 0.6);
     border-radius: 10px;
-    width: 50%;
+    width: 91.5%;
     height: 2rem;
 }
 .placeholder{
@@ -122,4 +123,26 @@ header .imagen {
     width: 100%;
     height: 5px;
     background-color: var(--naranja_claro);
+}
+.bordes_form {
+   border-radius:25px ;
+}
+.bordes_location {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;  
+    border-radius: 25px 25px 0px 0px; 
+    padding: 0%;
+ }
+.divimagen{
+    background-color: var(--blanco_roto);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 1%;
+    width: 100%;
+  }
+.localizacion{
+    background-color: var(--blanco_roto);
 }

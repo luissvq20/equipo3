@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KARMC'QUEEN</title>
-    
-   
+
+
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/compra_Tucoche/js/funcionalidad.js"></script>
-    <link rel="stylesheet" type="text/css" href="/compra_Tucoche/css/compra_Tucoche.css" /> 
-    <link rel="stylesheet" type="text/css" href="/menu_Navegacion/menu_Navegacion.css" /> 
+    <link rel="stylesheet" type="text/css" href="/compra_Tucoche/css/compra_Tucoche.css" />
+    <link rel="stylesheet" type="text/css" href="/menu_Navegacion/menu_Navegacion.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
@@ -39,9 +39,9 @@
                     <div class="filtro">
                         <h3>Filtros</h3>
                         <form class="formu1">
-            
+
                             <select id="marca" name="marca" required>
-                                <option value="" disabled selected>Marca</option>
+                                <option value="" class="disabled">Marca</option>
                                 <option value="AUDI">AUDI</option>
                                 <option value="BMW">BMW</option>
                                 <option value="PEUGEOT">PEUGEOT</option>
@@ -51,241 +51,54 @@
                                 <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
                                 <option value="SKODA">SKODA</option>
                                 <option value="FORD">FORD</option>
-            
+
                             </select><br><br>
-            
-                            <select id="modelo" name="modelo" required>
-                                <option value="" disabled selected>Modelo</option>
-                                <option value="AUDI">AUDI</option>
-                                <option value="BMW">BMW</option>
-                                <option value="PEUGEOT">PEUGEOT</option>
-                                <option value="MERCEDES">MERCEDES</option>
-                                <option value="SEAT">SEAT</option>
-                                <option value="NISSAN">NISSAN</option>
-                                <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
-                                <option value="SKODA">SKODA</option>
-                                <option value="FORD">FORD</option>
-            
-                            </select><br><br>
-            
-                            <select id="precio" name="precio" required>
-                                <option value="" disabled selected>Precio</option>
-                                <option value="AUDI">AUDI</option>
-                                <option value="BMW">BMW</option>
-                                <option value="PEUGEOT">PEUGEOT</option>
-                                <option value="MERCEDES">MERCEDES</option>
-                                <option value="SEAT">SEAT</option>
-                                <option value="NISSAN">NISSAN</option>
-                                <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
-                                <option value="SKODA">SKODA</option>
-                                <option value="FORD">FORD</option>
-            
-                            </select><br><br>
+
+                            <input type="number" id="precio" name="precio" placeholder="Precio" required><br><br>
+
                             <select id="ano" name="ano" required>
-                                <option value="" disabled selected>Año</option>
+                                <option value="">Año</option>
                                 <option value="2018">2018</option>
                                 <option value="2019">2019</option>
                                 <option value="2020">2020</option>
                                 <option value="2021">2021</option>
                                 <option value="2022">2022</option>
                                 <option value="2023">2023</option>
-            
+
                             </select><br><br>
-            
+
                             <select id="combustible" name="combustible">
-                                <option value="" disabled selected>Combustible</option>
+                                <option value="">Combustible</option>
                                 <option value="diesel">Diesel</option>
-                                <option value="gasonlina">Gasolina</option>
+                                <option value="gasolina">Gasolina</option>
                             </select><br><br>
-            
-                            <select id="caja_cambios" name="caja_cambios">
-                                <option value="" disabled selected>Caja de cambios</option>
-                                <option value="diesel">Diesel</option>
-                                <option value="gasonlina">Gasolina</option>
-                            </select><br><br>
-            
+
                             <select id="plazas" name="plazas">
-                                <option value="" disabled selected>NºPlazas</option>
-                                <option value="diesel">Diesel</option>
-                                <option value="gasonlina">Gasolina</option>
-                            </select><br><br>
-            
-                            <select id="carroceria" name="carroceria">
-                                <option value="" disabled selected>Carroceria</option>
-                                <option value="diesel">Diesel</option>
-                                <option value="gasonlina">Gasolina</option>
-                            </select><br><br>
-            
-                            <select id="cuota" name="cuota">
-                                <option value="" disabled selected>Cuota/mes</option>
-                                <option value="diesel">Diesel</option>
-                                <option value="gasonlina">Gasolina</option>
-                            </select><br><br>
-                            <input type="button" onclick="filtro()" class="boton-filtar"  value="Filtrar">
+                                <option value="">NºPlazas</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
 
-            
+                            </select><br><br>
+
+                            <input type="button" onclick="filtro()" class="boton-filtar" value="Filtrar">
+                            <input type="button" onclick="borrar_filtro()" class="boton-borrar" value="Borrar">
+
+
+
                         </form>
-            
-            
-            
-            
-                    </div>
-            </div>
 
-        </div>
-        <div class="col-9 col-md-10 col-lg-10">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 coches" id="coches">
-             
-                <!-- <div class="col">
-                    <div class="divimagen">
-                        <div>
-                            <img src="/menu_Principal/images/3.jpg" alt="" class="img-galeria">
-                        </div>
-                        <div class="texto">
-                            <p class="desde">Desde 250€/mes</p>
-                            <p class="precio">12.890€</p>
-                            <p class="nombre">BMW E36</p>
-                            <p>2.5i Coupe</p>
-                            <p>2019 | 150.015km | GASOLINA | Manual </p>
-                        </div>
-                        <input type="button" class="botones" value="Ver info">
-        
+
+
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="divimagen">
-                        <div>
-                            <img src="/menu_Principal/images/4.jpg" alt="" class="img-galeria">
-                        </div>
-                        <div class="texto">
-                            <p class="desde">Desde 320€/mes</p>
-                            <p class="precio">22.750€</p>
-                            <p class="nombre">Mercedes Clase A</p>
-                            <p>A 200 CDI AMG Line</p>
-                            <p>2021 | 45.210km | DIESEL | Automatico</p>
-                        </div>
-                        <input type="button" class="botones" value="Ver info">
-                    </div>
-                </div>
+
             </div>
-            <div class="coches">
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 300€/mes</p>
-                        <p class="precio">19.990€</p>
-                        <p class="nombre">VW Arteon</p>
-                        <p>2.0 TDI 190 quatt Str Attraction</p>
-                        <p>2020 | 80.321km | DIESEL | Automatico</p>
-                    </div>
-                    <input type="button" class="botones" value="Ver info">
-    
-                </div>
-    
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/3.jpg" alt="" class="img-galeria">
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 250€/mes</p>
-                        <p class="precio">12.890€</p>
-                        <p class="nombre">BMW E36</p>
-                        <p>2.5i Coupe</p>
-                        <p>2019 | 150.015km | GASOLINA | Manual </p>
-                    </div>
-                    <input type="button" class="botones" value="Ver info">
-    
-                </div>
-    
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/4.jpg" alt="" class="img-galeria">
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 320€/mes</p>
-                        <p class="precio">22.750€</p>
-                        <p class="nombre">Mercedes Clase A</p>
-                        <p>A 200 CDI AMG Line</p>
-                        <p>2021 | 45.210km | DIESEL | Automatico</p>
-                    </div>
-                    <input type="button" class="botones" value="Ver info">
-                </div>
-    
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/imagengolf.jpeg" alt="" class="img-galeria">
-    
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 270€/mes</p>
-                        <p class="precio">14.950€</p>
-                        <p class="nombre">VW Golf</p>
-                        <p>1.4 TSI Comfortline</p>
-                        <p>2017 | 95.750km | GASOLINA | Automatico </p>
-                    </div>
-                    <input type="button" class="botones" value="Ver info">
-    
-                </div>
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 300€/mes</p>
-                        <p class="precio">19.990€</p>
-                        <p class="nombre">VW Arteon</p>
-                        <p>2.0 TDI 190 quatt Str Attraction</p>
-                        <p>2020 | 80.321km | DIESEL | Automatico</p>
-                    </div>
-                    <input type="button" class="botones" value="Ver info">
-    
-                </div>
-    
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/3.jpg" alt="" class="img-galeria">
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 250€/mes</p>
-                        <p class="precio">12.890€</p>
-                        <p class="nombre">BMW E36</p>
-                        <p>2.5i Coupe</p>
-                        <p>2019 | 150.015km | GASOLINA | Manual </p>
-                    </div>
-                    <input type="button" class="botones" value="Ver info">
-    
-                </div>
-    
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/4.jpg" alt="" class="img-galeria">
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 320€/mes</p>
-                        <p class="precio">22.750€</p>
-                        <p class="nombre">Mercedes Clase A</p>
-                        <p>A 200 CDI AMG Line</p>
-                        <p>2021 | 45.210km | DIESEL | Automatico</p>
-                    </div>
-                    <input type="button" class="botones" value="Ver info">
-                </div>
-    
-                <div class="divimagen">
-                    <div>
-                        <img src="/menu_Principal/images/imagengolf.jpeg" alt="" class="img-galeria">
-    
-                    </div>
-                    <div class="texto">
-                        <p class="desde">Desde 270€/mes</p>
-                        <p class="precio">14.950€</p>
-                        <p class="nombre">VW Golf</p>
-                        <p>1.4 TSI Comfortline</p>
-                        <p>2017 | 95.750km | GASOLINA | Automatico </p>
-                    </div> 
-                    <input type="button" class="botones" value="Ver info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    -->
+            <div class="col-9 col-md-10 col-lg-10">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 coches" id="coches">
+
+
                 </div>
             </div>
         </div>
@@ -297,8 +110,8 @@
 
     <script src="/vende_Tucoche/js/menu.js"></script>
 
-    
-  
+
+
 </body>
 
 </html>
