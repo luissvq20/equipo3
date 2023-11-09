@@ -6,7 +6,6 @@
 }
 body {
     background-color: var(--azul_oscuro);
-    font-family: 'Montserrat', sans-serif;
 }
 .fondo_2{
     display: flex;
