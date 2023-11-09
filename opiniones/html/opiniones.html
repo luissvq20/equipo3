@@ -7,8 +7,9 @@
 
 
     <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">k
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-utilities.min.css">
+    <script src="/bootstrap/js/"></script>
 
     <script src="/opiniones/js/json_print.js"></script>
 
@@ -47,7 +48,7 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-xxl-12 col-12 opiniones-titulo">
+            <div class="col-xxl-12 col-12 mt-3 opiniones-titulo">
                 <h2>OPINIONES DE NUESTROS CLIENTES</h2>
             </div>
         </div>
@@ -59,16 +60,16 @@
     </div>
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-xxl-1 col-1 justify-content-center">
+            <div class="col-xxl-1 col-1 justify-content-center ">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Launch demo modal
                 </button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
@@ -76,7 +77,28 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="contenedor-campos col-xxl-12">
+                                            <div class="campo">
+                                                <label id="nombre">Nombre : </label>
+                                                <input type="text" id="nombreInput" placeholder="Nombre">
+                                            </div>
+                                            <div class="campo">
+                                                <label id="apellidos">Apellidos :</label>
+                                                <input type="text" id="apellidosInput" placeholder="Apellidos">
+                                            </div> 
+                                            <div class="campo">
+                                                <label id="modeloCoche">Modelo de coche : </label>
+                                                <input id="modeloCocheInput" placeholder="Modelo de coche">
+                                            </div>    
+                                            <div class="campo">
+                                                <label id="opinion">Opinion : </label>
+                                                <texarea type="textarea" id="opinionInput" placeholder="Opinion">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -89,29 +111,30 @@
         </div>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="col-xxl-12 col-12 text-center titulo-estadisticas">
+                <h1>MARCAS Y CIUDADES MAS VENDIDAS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="row d-flex justify-content-md-center justify-content-xxl-center">
             <div class="col-xxl-4 col-11 estadisticas ">
-                <div class="card">
-                    <h3 class="opiniones-estadisticas">Coches mas vendidos</h3>
-                    <figure class="highcharts-figure">
-                        <div id="estadisticas-charts"></div>
-                        <p class="highcharts-description">
-                        </p>
-                    </figure>
-                  </div>
-                
+                <figure class="highcharts-figure">
+                    <div id="estadisticas-charts"></div>
+                    <p class="highcharts-description">
+                    </p>
+                </figure>
             </div>
             <div class="col-xxl-4 col-11 tabla-datos">
-                <div class="card">
-                    <h3 class="opiniones-estadisticas">Coches mas vendidos</h3>
-                    <figure class="highcharts-figure">
-                        <div id="circulo-estadisticas_chart"></div>
-                        <p class="highcharts-description">
-    
-                        </p>
-                    </figure>
-                  </div>             
+                <figure class="highcharts-figure">
+                    <div id="circulo-estadisticas_chart"></div>
+                    <p class="highcharts-description">
+
+                    </p>
+                </figure>
             </div>
+
         </div>
     </div>
 

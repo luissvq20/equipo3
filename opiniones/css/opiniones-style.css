@@ -273,3 +273,25 @@ a {
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
+
+/* MODAL CSS */
+
+.contenedor-campos {
+    height: 15rem;
+    max-width: 100%;
+    background-color: var(--azul_oscuro);
+    border-radius: 10px;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    color: var(--blanco_roto);
+}
