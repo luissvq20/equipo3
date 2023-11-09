@@ -12,6 +12,8 @@ function init() {
 
 function mostrarCoches(datos) {
     var contenedor_coches = document.getElementById("coches");
+    contenedor_coches.innerHTML=" ";
+
 
     datos.forEach((coche, index) => {
         var div_coche = document.createElement("div");
@@ -42,19 +44,33 @@ function mostrarCoches(datos) {
 function filtro() {
     var marca_seleccionada = document.getElementById("marca").value;
     var ano_seleccionada = document.getElementById("ano").value;
+    var precio_seleccionada = document.getElementById("precio").value;
+    var combustible_seleccionada = document.getElementById("combustible").value;
+    var plazas_seleccionada = document.getElementById("plazas").value;
+
+    var coches_filtrados=coches_json
+
+   
 
     if(marca_seleccionada){
-        coches_json=coches_json.filter(coches=>coches.marca==marca_seleccionada);
+        coches_filtrados=coches_json.filter(coches=>coches.marca==marca_seleccionada);
     }
-
     if(ano_seleccionada){
-        coches_json=coches_json.filter(c=>c.ano==ano_seleccionada);
+        coches_filtrados=coches_filtrados.filter(coches=>coches.ano==ano_seleccionada);
+    }
+    if(precio_seleccionada){
+        coches_filtrados=coches_filtrados.filter(coches=>coches.precio==precio_seleccionada);
+    }
+    if(combustible_seleccionada){
+        coches_filtrados=coches_filtrados.filter(coches=>coches.combustible==combustible_seleccionada);
+    }
+    if(plazas_seleccionada){
+        coches_filtrados=coches_filtrados.filter(coches=>coches.plazas==plazas_seleccionada);
     }
 
     var contenedor_coches = document.getElementById("coches");
     contenedor_coches.innerHTML=" ";
-
-    coches_json.forEach((coche, index) => {
+    coches_filtrados.forEach((coche, index) => {
         var div_coche = document.createElement("div");
         div_coche.className = "col"
         div_coche.id = "coche_" + index;
@@ -77,4 +93,16 @@ function filtro() {
         `;
         contenedor_coches.appendChild(div_coche)
     })
+}
+
+function borrar_filtro() {
+    document.getElementById("marca").value ="";
+    document.getElementById("ano").value="";
+    document.getElementById("precio").value="";
+    document.getElementById("combustible").value="";
+    document.getElementById("plazas").value="";
+
+    mostrarCoches(coches_json);
+
+   
 }

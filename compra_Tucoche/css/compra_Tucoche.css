@@ -145,6 +145,10 @@ textarea {
 
 }
 
+.disabled {
+  color: #2f3033;
+}
+
 .boton-filtar {
   margin: 0%;
   min-width: 15rem;
@@ -160,6 +164,26 @@ textarea {
 }
 
 .boton-filtar:hover {
+  box-shadow: 1px 2px 2px rgba(229, 103, 23, 0.075)inset, 0 0 15px rgba(255, 102, 0, 0.6);
+
+
+}
+
+.boton-borrar {
+  margin: 0%;
+  min-width: 15rem;
+  max-width: 20rem;
+  min-height: 3rem;
+  max-height: 7rem;
+  margin-top: 1%;
+  color: var(--naranja);
+  background-color: var(--blanco_roto);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;  
+
+}
+
+.boton-borrar:hover {
   box-shadow: 1px 2px 2px rgba(229, 103, 23, 0.075)inset, 0 0 15px rgba(255, 102, 0, 0.6);
 
 
@@ -281,6 +305,19 @@ textarea {
 
 }
 
+.boton-borrar {
+  margin: 0%;
+  min-width: 9rem;
+  max-width: 10rem;
+  min-height: 3rem;
+  max-height: 7rem;
+  margin-top: 1%;
+  color: var(--naranja);
+  background-color: var(--blanco_roto);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;  
+
+}
 
   
 }
@@ -349,6 +386,19 @@ textarea {
   cursor: pointer;  
 
 }
-  
+
+.boton-borrar {
+  margin: 0%;
+  min-width: 6rem;
+  max-width: 10rem;
+  min-height: 3rem;
+  max-height: 7rem;
+  margin-top: 1%;
+  color: var(--naranja);
+  background-color: var(--blanco_roto);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;  
+
+}
   
 }
