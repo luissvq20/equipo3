@@ -67,9 +67,34 @@
 
 .line {
     height: 2px;
-    background: white; 
+    background: white;
 }
 
 footer {
     font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .brand {
+        font-weight: 400;
+        font-size: large;
+    }
+
+    .brand+p {
+        font-weight: 500;
+        font-size: small;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .brand {
+        font-weight: 400;
+        font-size: smaller;
+    }
+
+    .brand+p {
+        font-weight: 500;
+        font-size: small;
+    }
 }
