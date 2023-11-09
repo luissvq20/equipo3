@@ -86,6 +86,9 @@
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
     }
+    .menu-navegacion{
+        width: 50vw;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -131,5 +134,13 @@
         color: #fff;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
+    }
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburger{
+        top: 20px;
+        right: 20px;
     }
 }
