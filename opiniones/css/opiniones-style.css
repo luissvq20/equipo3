@@ -276,11 +276,16 @@ a {
 
 /* MODAL CSS */
 
-.contenedor-campos {
-    height: 15rem;
-    max-width: 100%;
+.contribuye-titulo {
+    color: var(--blanco_roto);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.modal-bg{
     background-color: var(--azul_oscuro);
-    border-radius: 10px;
 }
 
 .campo {
@@ -294,4 +299,30 @@ a {
     margin-bottom: .5rem;
     display: block;
     color: var(--blanco_roto);
+}
+
+.boton-añadir-comentario {
+    border-color: var(--naranja_claro);
+    background-color: transparent;
+    color: var(--blanco_roto);
+}
+
+.boton-añadir-comentario:hover {
+    border-color: var(--blanco_roto);
+    background-color: var(--blanco_roto);
+    color: var(--naranja_claro);
+}
+
+.btnEnviar {
+    border-radius: 10px;
+    border-color: var(--azul_oscuro);
+}
+
+.modal-body {
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.modal-content {
+    background-color: var(--blanco_roto);
 }

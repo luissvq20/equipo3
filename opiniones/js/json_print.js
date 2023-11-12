@@ -13,7 +13,7 @@ function mostrarOpiniones(datos) {
     
     datos.forEach((opinion, index) => {
         var div_opinion = document.createElement("div");
-        div_opinion.className="opiniones bg-light mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11"
+        div_opinion.className="opiniones bg-opiniones mt-xxl-4 mt-md-4 mt-4 col-xxl-5 col-md-10 col-11"
         div_opinion.id="opinion_"+index;
         div_opinion.innerHTML=`
            
