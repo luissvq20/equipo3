@@ -314,8 +314,27 @@ a {
 }
 
 .btnEnviar {
-    border-radius: 10px;
-    border-color: var(--azul_oscuro);
+    border-color: var(--naranja_claro);
+    background-color: transparent;
+    color: var(--blanco_roto);
+}
+
+.btnEnviar:hover {
+    border-color: var(--blanco_roto);
+    background-color: var(--blanco_roto);
+    color: var(--naranja_claro);
+}
+
+.btnCerrar {
+    border-color: var(--naranja_claro);
+    background-color: transparent;
+    color: var(--blanco_roto);
+}
+
+.btnCerrar:hover {
+    border-color: var(--blanco_roto);
+    background-color: var(--blanco_roto);
+    color: var(--naranja_claro);
 }
 
 .modal-body {
@@ -324,5 +343,16 @@ a {
 }
 
 .modal-content {
-    background-color: var(--blanco_roto);
+    background-color: var(--azul_oscuro);
+}
+
+.modal-title {
+    color: var(--blanco_roto);
+    text-shadow: 2px 2px var(--naranja_claro);
+}
+
+.modal-header {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
