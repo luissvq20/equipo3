@@ -218,6 +218,7 @@ function showmodal(id) {
         
         document.getElementsByTagName("body")[0].appendChild(div_opacity);
         document.getElementById("exampleModal").style.display="block"
+        document.getElementById("logo").style.display="none";
 
     })
 }
@@ -234,6 +235,8 @@ function closemodal(id) {
 
     //restaurar
         document.getElementById("exampleModal").className = "modal face";
+
+        document.getElementById("logo").style.display="block";
 
 
 }
