@@ -27,7 +27,7 @@
     </nav>
 
     <div class="coches_disponibles">
-        <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
+        <img class="logo" id="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
         <h1 class="compramos_coche">COCHES DISPONIBLES!!</h1>
 
     </div>
@@ -100,6 +100,27 @@
 
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color:#ffffff;">
+            <div class="modal-header" style="background-color: #ffffff;">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"><strong id="nombre"></strong></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closemodal()"></button>
+            </div>
+            <div class="modal-body" id="modal">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closemodal()" data-bs-dismiss="modal">CERRAR</button>
+                <a href="mailto:karmcqueen@gmail.com"><button type="button" class="btn btn-primary">ME INTERESA</button></a>
+                
             </div>
         </div>
     </div>

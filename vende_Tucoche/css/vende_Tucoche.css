@@ -441,6 +441,10 @@ footer {
     margin-left: 0%;
   }
 
+  .marco1 {
+    display: none;
+  }
+
   .imagenSuperpuesta {
     position: absolute;
     /* O 'absolute' si prefieres posicionar relativo a un contenedor */
