@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bestcaption</title>
+    <title>Menu Principal</title>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/menu_Principal/css/pagina.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Este header guarda LOS MENUS y Texto -->
     <header class="header" id="inicio">
@@ -21,107 +26,75 @@
             <a href="/opiniones/html/opiniones.html">OPINIONES</a>
             <a href="/contacta/html/contacta.html">CONTACTO</a>
         </nav>
-
-        <div class="contenedor head">
-            <img src="/menu_Principal/images/logoSINFONDO.png" alt="" class="titulo">
-             <!-- <h1 class="titulo">Convertimos tus sueños en realidad</h1>  -->
-    
-        </div>
+        <img src="/menu_Principal/images/logoSINFONDO.png" alt="" class="img-fluid ">
     </header>
 
-    <!-- Este main guarda la imagen de la camara y los textos de DISEÑO WEB -->
-    <main> 
-        <section class="contenedor" id="servicio">
-            <h2 class="subtitulo">Nuestro servicio</h2>
-            <div class="contenedor-servicio">
-                <img src="/menu_Principal/images/coche.svg" alt="">
-                <div class="checlist-servicio">
-                    <div class="servicie">
-                        <h3 class="n-service"><span class="number">1 </span>Nos dedicamos a la compra venta</h3>
-                        <p>Compra coches de cualquier gama al mejor precio</p>
-                    </div>
-                    <div class="servicie">
-                        <h3 class="n-service"><span class="number">2 </span>¿Quieres venderlo?</h3>
-                        <p>¡No te preocupes! en Kar Mc'Queen te garantizamos la mejor tasacion por nuestros expertos</p>
-                    </div>
-                    <div class="servicie">
-                        <h3 class="n-service"><span class="number">3 </span>¿Buscas un coche en concreto y no lo ves?</h3>
-                        <p>Ponte en contacto con nosotros y ¡haremos la busqueda de tu vehiculo por ti!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="gallery" id="portafolio">
-            <div class="contenedor">
-                <h2 class="subtitulo">Galeria</h2>
-                <div class="contenedor-galeria">
-                    <div class="divimagen">
-                        <img src="/menu_Principal/images/2.jpg" alt="" class="img-galeria">
-                        <p>Desde 300€/mes</p>
-                        <p>19.990€</p>
-                        <p>VW Arteon</p>
-                        <p>2.0 TDI 190 quatt Str Attraction</p>
-                        <p>2020</p>
-                        <p>80.321km</p>
-                        <p>DIESEL</p>
-                        <p>Automatico</p>
-                    </div>
-                    
-                    <div class="divimagen">
-                        <img src="/menu_Principal/images/3.jpg" alt="" class="img-galeria">
-                        <p>Desde 250€/mes</p>
-                        <p>12.890€</p>
-                        <p>BMW E36</p>
-                        <p>2.5i Coupe</p>
-                        <p>2019</p>
-                        <p>150.015km</p>
-                        <p>GASOLINA</p>
-                        <p>Manual</p>
-                    </div>
-                    
-                    <div class="divimagen">
-                        <img src="/menu_Principal/images/4.jpg" alt="" class="img-galeria">
-                        <p>Desde 320€/mes</p>
-                        <p>22.750€</p>
-                        <p>Mercedes Clase A</p>
-                        <p>A 200 CDI AMG Line</p>
-                        <p>2021</p>
-                        <p>45.210km</p>
-                        <p>DIESEL</p>
-                        <p>Automatico</p>
-                    </div>
 
-                    <div class="divimagen">
-                        <img src="/menu_Principal/images/imagengolf.jpeg" alt="" class="img-galeria">
-                        <p>Desde 270€/mes</p>
-                        <p>14.950€</p>
-                        <p>VW Golf</p>
-                        <p>1.4 TSI Comfortline</p>
-                        <p>2017</p>
-                        <p>95.750km</p>
-                        <p>GASOLINA</p>
-                        <p>Automatico</p>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/cocheaudi.jpg" class="d-block w-100 tamaño-carrusel" alt="IMAGEN 1">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>AUDI Q3</h5>
+                        <p>RECORRE TODOS LOS TERRENOS</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/cochemercedes.jpg" class="d-block w-100 tamaño-carrusel" alt="IMAGEN 2">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>MERCEDES CLASE A</h5>
+                        <p>CLASE, LA QUE LLEVA ESTE COCHE</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/cochebmv.jpg" class="d-block w-100 tamaño-carrusel" alt="IMAGEN 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>BMW SERIE 3</h5>
+                        <p>PETARDEA COMO UCRANIA</p>
                     </div>
                 </div>
             </div>
-            <button class="botones"><a href="/vende_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a></button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">ATRÁS</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">SIGUIENTE</span>
+            </button>
+        </div>
+        <div class="container">
+            <button class="col-md-3 botones text-center"><a href="/compra_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a></button>
+        </div>
+
         </section>
         <section class="imagen-light">
             <img src="/menu_Principal/images/close.svg" alt="" class="close">
             <img src="/menu_Principal/images/exposicion.jpg" alt="" class="agregar-imagen">
         </section>
-        <section class="contenedor" id="expertos">
+        <section class="container" id="expertos">
             <h2 class="subtitulo">Expertos en:</h2>
-            <section class="experts">
-                <div class="cont-expert">
-                    <img src="/menu_Principal/images/compraventa.svg" alt="">
+            <section class="experts ">
+                <div class="cont-expert row-cols-1">
+                    <img src="/menu_Principal/images/compraventa.svg" alt="" class="col-2">
                     <h3 class="n-expert">COMPRA-VENTA</h3>
                 </div>
-                <div class="cont-expert">       
+                <div class="cont-expert col-sm-6">
                     <img src="/menu_Principal/images/ventas.svg" alt="">
                     <h3 class="n-expert">EL MEJOR PRECIO</h3>
-                </div> 
-                <div class="cont-expert">
+                </div>
+                <div class="cont-expert col-sm-6">
                     <img src="/menu_Principal/images/tarjeta.svg" alt="">
                     <h3 class="n-expert">FINANCIACION SIN INTERESES</h3>
                 </div>
@@ -133,7 +106,7 @@
         <div class="contenedor footer-content">
             <div class="contact-us">
                 <h2 class="brand">KAR MC'QUEEN</h2>
-                <p>Coches que te inspiran, precios que te sorprenden.</p> 
+                <p>Coches que te inspiran, precios que te sorprenden.</p>
             </div>
             <div class="social-media">
                 <a href="https://www.instagram.com/bestcaption_mph/" class="social-media-icon">
@@ -144,8 +117,9 @@
 
         <div class="line"></div>
     </footer>
-    
+
     <script src="/menu_Principal/js/menu.js"></script>
     <script src="/menu_Principal/js/lightbox.js"></script>
 </body>
+
 </html>

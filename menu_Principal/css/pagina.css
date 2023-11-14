@@ -18,9 +18,9 @@ body{
 .contenedor{
     width: 90%;
     max-width: 1200px;
-    overflow: hidden;    /* OCULTA LOS ELEMENTOS */
+   
     margin: auto;        /* LO CENTRA TODO */
-    padding: 60px 0;     /* PADDING 60PX ARRIBA Y ABAJO Y 0 PX A LOS LADOS - ESPACIADO ENTRE LOS ELEMENTOS - */
+  
     
 }
 
@@ -76,16 +76,12 @@ header{
     transform: translate(0);
 }
 
+
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
 }
 
-.titulo{
-    font-size: 60px;
-    margin-bottom: 1px;
-    align-content: center;
-}
 
 .copy{
     font-weight: 300;
@@ -321,8 +317,8 @@ footer{
     max-width: 20rem;
     min-height: 3rem;
     max-height: 7rem;
-    margin-bottom: 10%;
-    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-top: 2%;
     color: var(--blanco_roto);
     background-color: var(--naranja);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -337,14 +333,25 @@ footer{
     color: #ffffff;
   }
 
-@media screen  and (max-width:800px){
+ 
+.logo-menu{
+    width: 1px;
+  }
+  .img-fluid {
+    transform: translateX(25em);
+  }
+
+
+@media (max-width:800px){
     .menu-navegacion{
         width: 50vw;
     }
 
-    .titulo{
-        font-size: 40px;
+    .text-center{
+        width: 700px;
+        
     }
+    
 
     .contenedor-servicio img{
         width: 80%;
@@ -368,7 +375,7 @@ footer{
     }
 
     .cont-expert{
-        width: 80%;
+        width: 50%;
     }
 
     .footer-content{
@@ -393,9 +400,27 @@ footer{
     .social-media i{
         margin-left: 0;
     }
+    .botones {
+        margin-left: 60%;
+        margin: 28%;
+        width: 48%;
+        min-width: 15rem;
+        max-width: 20rem;
+        min-height: 3rem;
+        max-height: 7rem;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        color: var(--blanco_roto);
+        background-color: var(--naranja);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .img-fluid {
+        transform: translate(1px, 15%);
+      }
 }
+    
 
-@media screen and (max-width:500px){
+@media (max-width:500px){
     .menu-navegacion{
         width: 65vw;
     }
@@ -428,4 +453,21 @@ footer{
     .contact-us{
         width: 90%;
     }
+    .botones{
+    margin-left: 60%;
+    margin: 17%;
+    width: 48%;
+    min-width: 15rem;
+    max-width: 20rem;
+    min-height: 3rem;
+    max-height: 7rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: var(--blanco_roto);
+    background-color: var(--naranja);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .img-fluid {
+        transform: translate(1px, 50%);
+      }
 }

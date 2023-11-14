@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARMC'QUEEN</title>
+
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/compra_Tucoche/js/funcionalidad.js"></script>
+    <link rel="stylesheet" type="text/css" href="/compra_Tucoche/css/compra_Tucoche.css" />
+    <link rel="stylesheet" type="text/css" href="/menu_Navegacion/menu_Navegacion.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="/menu_Principal/images/menu.svg" alt="" class="hamburger">
+    <nav class="menu-navegacion">
+        <a href="/menu_Principal/html/menu_Principal.html">INICIO</a>
+        <a href="/compra_Tucoche/html/compra_Tucoche.html">COMPRA TU COCHE</a>
+        <a href="/vende_Tucoche/html/vende_Tucoche.html">VENDE TU COCHE</a>
+        <a href="/opiniones/html/opiniones.html">OPINIONES</a>
+        <a href="/contacta/html/contacta.html">CONTACTO</a>
+    </nav>
+
+    <div class="coches_disponibles">
+        <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
+        <h1 class="compramos_coche">COCHES DISPONIBLES!!</h1>
+
+    </div>
+
+    <div class="container-100">
+        <div class="row">
+            <div class="col-3 col-md-2 col-lg-2">
+                <div class="filtro_coches">
+                    <div class="filtro">
+                        <h3>Filtros</h3>
+                        <form class="formu1">
+
+                            <select id="marca" name="marca" required>
+                                <option value="" class="disabled">Marca</option>
+                                <option value="AUDI">AUDI</option>
+                                <option value="BMW">BMW</option>
+                                <option value="PEUGEOT">PEUGEOT</option>
+                                <option value="MERCEDES">MERCEDES</option>
+                                <option value="SEAT">SEAT</option>
+                                <option value="ALFA_ROMEO">ALFA ROMEO</option>
+                                <option value="VOLSKSWAGEN">VOLSKSWAGEN</option>
+                                <option value="SKODA">SKODA</option>
+                                <option value="FORD">FORD</option>
+
+                            </select><br><br>
+
+                            <input type="number" id="precio" name="precio" placeholder="Precio" required><br><br>
+
+                            <select id="ano" name="ano" required>
+                                <option value="">Año</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+
+                            </select><br><br>
+
+                            <select id="combustible" name="combustible">
+                                <option value="">Combustible</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="gasolina">Gasolina</option>
+                            </select><br><br>
+
+                            <select id="plazas" name="plazas">
+                                <option value="">NºPlazas</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+
+                            </select><br><br>
+
+                            <input type="button" onclick="filtro()" class="boton-filtar" value="Filtrar">
+                            <input type="button" onclick="borrar_filtro()" class="boton-borrar" value="Borrar">
+
+
+
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9 col-md-10 col-lg-10">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 coches" id="coches">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script src="/vende_Tucoche/js/menu.js"></script>
+
+
+
+</body>
+
+</html>
