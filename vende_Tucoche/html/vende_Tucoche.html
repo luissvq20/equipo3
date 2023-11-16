@@ -27,7 +27,7 @@
         <a href="/opiniones/html/opiniones.html">OPINIONES</a>
         <a href="/contacta/html/contacta.html">CONTACTO</a>
     </nav>
-    <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" alt="logo">
+    <img class="logo" src="/vende_Tucoche/img/logoSINFONDOchica.png" id="logo" alt="logo">
     <img class="imagenSuperpuesta" src="/vende_Tucoche/img/630_SUPER_414_3DN_tmb.png" alt="vende_Tucoche">
     <h1 class="compramos_coche">COMPRAMOS TU COCHE</h1>
 
@@ -287,7 +287,7 @@
                                     <input type="button" class="botones" onclick="form2()" value="Volver">
                                 </div>
                                 <div class="col">
-                                    <input type="button" class="botones" value="Coger cita">
+                                    <input type="button" class="botones" onclick="showmodalform()" value="Coger cita">
                                 </div>
 
                             </div>
@@ -306,6 +306,24 @@
                     </form>
 
     </div>                
+
+    <div class="modal fade" id="exampleModalform" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color:#ffffff;">
+           
+            <div class="modal-body" id="modalform">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary " onclick="closemodalform()" data-bs-dismiss="modal">CERRAR</button>
+                <a href="mailto:karmcqueen@gmail.com"><button type="button" class="btn btn-primary boton-filtar0">SOLICITAR CITA</button></a>
+                
+            </div>
+        </div>
+    </div>
+
+    </div>
     
 
     <script src="/vende_Tucoche/js/menu.js"></script>
