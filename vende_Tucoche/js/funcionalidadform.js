@@ -5,15 +5,28 @@ function init() {
 }
 
 function form1(){
-    document.getElementById("f1").style.display = "block";
-    document.getElementById("f2").style.display = "none";
-    document.getElementById("f3").style.display = "none";
+
+        document.getElementById("f1").style.display = "block";
+        document.getElementById("f2").style.display = "none";
+        document.getElementById("f3").style.display = "none";
+    
+
+
 }
 
 function form2(){
-    document.getElementById("f1").style.display = "none";
-    document.getElementById("f2").style.display = "block";
-    document.getElementById("f3").style.display = "none";
+    var marca = document.getElementById("marca").value;
+    var modelo = document.getElementById("modelo").value;
+    var ano = document.getElementById("ano").value;
+
+    if(marca==" " || modelo=="" || ano==""){
+        alert("Algunos de los campos obligatorios están incompletos")
+    }else{
+        document.getElementById("f1").style.display = "none";
+        document.getElementById("f2").style.display = "block";
+        document.getElementById("f3").style.display = "none";
+    }
+
 }
 
 function form3(){
