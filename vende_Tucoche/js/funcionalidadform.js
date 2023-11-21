@@ -30,19 +30,38 @@ function form2(){
 }
 
 function form3(){
-    document.getElementById("f1").style.display = "none";
-    document.getElementById("f2").style.display = "none";
-    document.getElementById("f3").style.display = "block";
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var dni = document.getElementById("dni").value;
+
+
+    if(nombre=="" || email=="" || dni==""){
+        alert("Algunos de los campos obligatorios están incompletos")
+    }else{
+        document.getElementById("f1").style.display = "none";
+        document.getElementById("f2").style.display = "none";
+        document.getElementById("f3").style.display = "block";
+    }
+   
 }
 
 function showmodalform() {
+    var provinciacita = document.getElementById("provinciacita").value;
+    var concesionario = document.getElementById("concesionario").value;
+    var fecha = document.getElementById("fecha").value;
+    var hora = document.getElementById("hora").value;
 
-    var modalform = document.getElementById("modalform");
+
+
+    if(provinciacita==" " || concesionario==" " || fecha==" " || hora==" "){
+        alert("Es necesario completar todos los campos")
+    }else{
+        var modalform = document.getElementById("modalform");
     var marca = document.getElementById("marca").value;
     var modelo = document.getElementById("modelo").value;
     var nombre = document.getElementById("nombre").value;
     var telefono = document.getElementById("telefono").value;
-    var concesionario = document.getElementById("Concesionario").value;
+    var concesionario = document.getElementById("concesionario").value;
     var fecha = document.getElementById("fecha").value;
     var hora = document.getElementById("hora").value;
 
@@ -72,14 +91,7 @@ function showmodalform() {
 
     </ul>
     
-    </div>
-
-
-
-
-
-
-`;
+    </div>`;
         modalform.appendChild(div_cochemodal);
 
         document.getElementById("exampleModalform").className="modal face show"
@@ -89,6 +101,9 @@ function showmodalform() {
         document.getElementsByTagName("body")[0].appendChild(div_opacity);
         document.getElementById("exampleModalform").style.display="block"
         document.getElementById("logo").style.display="none";
+
+
+    }
 
     
 }
