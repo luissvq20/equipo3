@@ -31,7 +31,7 @@ body {
 .logo {
   position: absolute;
   /* O 'absolute' si prefieres posicionar relativo a un contenedor */
-  z-index: 9999;
+  z-index: -1;
   /* Un valor alto para asegurar que esté en la parte superior */
   top: 3%;
   width: auto;
